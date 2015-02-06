@@ -1,0 +1,27 @@
+{
+  "name": "Toulon",
+  "description": "USIU - Hackathon",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.x",
+    "express-session": "*",
+    "kue": "*",
+    "forever": "*",
+    "forever-monitor": "*",
+    "sendgrid": "1.1.1",
+    "should": "*",
+    "supertest": "*",
+    "winston": "*",
+    "morgan": "*",
+    "mocha": "*",
+    "validator": "*",
+    "serve-favicon": "*",
+    "cookie-parser": "*",
+    "body-parser": "*",
+    "lodash": "*",
+    "slug": "*",
+    "handlebars": "*",
+    "express-handlebars": "*"
+  }
+}
