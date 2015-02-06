@@ -6,6 +6,9 @@
   "dependencies": {
     "express": "4.x",
     "express-session": "*",
+    "hiredis": "*",
+    "redis": "*",
+    "connect-redis": "2.1.0",
     "kue": "*",
     "forever": "*",
     "forever-monitor": "*",
@@ -22,6 +25,9 @@
     "lodash": "*",
     "slug": "*",
     "handlebars": "*",
-    "express-handlebars": "*"
+    "express-handlebars": "*",
+    "sequelize": "*",
+    "pg": "*",
+    "pg-hstore": "*"
   }
 }
