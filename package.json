@@ -23,7 +23,6 @@
     "cookie-parser": "*",
     "body-parser": "*",
     "lodash": "*",
-    "slug": "*",
     "handlebars": "*",
     "express-handlebars": "*",
     "sequelize": "*",
