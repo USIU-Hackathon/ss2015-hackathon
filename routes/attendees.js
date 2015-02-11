@@ -7,7 +7,7 @@ exports.addAttendee = function(req, res) {
 		res.status(400).json({ 'Error': 'Bad Request' });
 	}
 
-	var new_post = new Attendees({
+	var newPost = new Attendees({
 	  name: req.body.name,
 	  email: req.body.email,
 	  idea: req.body.idea,
@@ -15,7 +15,7 @@ exports.addAttendee = function(req, res) {
 	  github_username: req.body.github_username
 	});
 
-	Attendees.save().then(function(error) {
+	newPost.save().then(function(error) {
 	    if (error) {
 	        res.status(500).json({ error: "something blew up, we're fixing it" });
 	    }
@@ -24,29 +24,14 @@ exports.addAttendee = function(req, res) {
 	        res.set({
 			  'Content-Type': 'application/json',
 			});
-			res.status(200).json({ 'OK': 'Post Created'});
+			res.status(200).json({ 'OK': 'Attendee Created'});
 	    }
 	});
 };
 
 
-exports.getPostById = function(req, res) {
-
-	Post.get( req.params.id ).run(function(error, result) {
-		if (result == null) {
-			res.status(404).json({ "Error": "Post Not Found" });
-		}
-		if (error) {
-			res.status(500).json({ "error": "something blew up, we're fixing it" });
-		} else {
-	        console.log('Post sent');
-	        res.set({
-			  'Content-Type': 'application/json',
-			});
-
-			res.status(200).json(result);
-		}
-	});
+exports.getAttendeeById = function(req, res) {
+	
 };
 
 

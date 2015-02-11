@@ -49,6 +49,9 @@ app.all("*", function(req, res, next) {
 // static pages routes
 app.get('/', index.index);
 
+// API
+app.post('/addAttendee', attendees.addAttendee);
+
 
 // 404 error handler
 app.get('*', function(req, res) {
