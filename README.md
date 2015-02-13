@@ -7,3 +7,4 @@ USIU registration
 - Metrics - Follow up: lines of code, teams, projects launched
 - Feedback Page
 - Google Analytics
+- Setup git hooks
