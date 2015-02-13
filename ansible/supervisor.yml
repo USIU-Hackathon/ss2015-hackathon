@@ -13,13 +13,7 @@
     template: src=templates/supervisord.j2 dest=/etc/supervisord.conf
     notify:
     - restart supervisor
-    - run supervisor
-
-  - name: ensure supervisor is running
-    service: name=supervisor state=started
 
   handlers:
     - name: restart supervisor
       service: name=supervisor state=restarted
-    - name: run supervisor
-      command: supervisord -c /etc/supervisord.conf

@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webserver
 
   remote_user: root
   tasks:

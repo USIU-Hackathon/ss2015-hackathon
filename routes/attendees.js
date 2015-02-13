@@ -12,9 +12,10 @@ exports.addAttendee = function(req, res) {
 	  idea: req.body.idea,
 	  phone_number: req.body.phone_number,
 	  github_username: req.body.github_username,
-	  code: Math.floor(Math.random() * 55343463543 * Math.random())
+	  code: JSON.stringify(Math.floor(Math.random() * 55343463543 * Math.random()))
 	});
 
+	// check if attendee is already registered
 	newPost.save(function(error, result) {
 		if (result == null) {
 			res.status(400).json({ "Error": "Attendee Already Exists" });

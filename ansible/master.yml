@@ -5,14 +5,7 @@
     - redis
     - supervisor
     - iptables
-    - newrelic
-
-- hosts: dbserver
-  roles:
-    - rethinkdb
 
 - hosts: webserver
   roles:
     - nginx
-    - celery
-    - uwsgi
