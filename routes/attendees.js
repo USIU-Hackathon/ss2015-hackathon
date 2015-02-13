@@ -8,7 +8,7 @@ exports.addAttendee = function(req, res) {
 
 	var newPost = new Attendees({
 	  name: req.body.name,
-	  email: req.body.email,
+	  id: req.body.email,
 	  idea: req.body.idea,
 	  phone_number: req.body.phone_number,
 	  github_username: req.body.github_username,
