@@ -20,7 +20,7 @@ function sendwelcomeEmail (user) {
 		job.on('complete', function() {
 			console.log('Job Complete');
 		});
-		
+
 	})(user);
 
 }

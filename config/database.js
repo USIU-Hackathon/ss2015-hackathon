@@ -1,11 +1,9 @@
 module.exports = {
-    postgres: {
-        host: 'localhost',
-        port: 5433,
-        password: "j633.125**//",
-        database: 'toulon',
-        user     : 'synod',
-        charset  : 'utf8'
+    rethinkdb: {
+        host: "localhost",
+        port: 28015,
+        authKey: "hackathon",
+        db: "hackathon"
     },
     redis: {
       host: 'localhost',

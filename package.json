@@ -8,6 +8,8 @@
     "express-session": "*",
     "hiredis": "*",
     "redis": "*",
+    "thinky": "1.14.4",
+    "rethinkdb": "1.15.0-0",
     "connect-redis": "2.1.0",
     "kue": "*",
     "forever": "*",
@@ -24,9 +26,6 @@
     "body-parser": "*",
     "lodash": "*",
     "handlebars": "*",
-    "express-handlebars": "*",
-    "sequelize": "*",
-    "pg": "*",
-    "pg-hstore": "*"
+    "express-handlebars": "*"
   }
 }
