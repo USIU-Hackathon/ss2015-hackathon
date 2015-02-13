@@ -7,11 +7,11 @@ exports.index = function(req, res) {
 };
 
 
-exports.index = function(req, res) {
+exports.schedule = function(req, res) {
 	res.render('schedule', { title: 'Schedule' });
 };
 
-exports.index = function(req, res) {
+exports.apply = function(req, res) {
 	res.render('apply', { title: 'Apply' });
 };
 

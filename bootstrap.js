@@ -47,6 +47,8 @@ module.exports = function(app, express) {
 
     // static pages routes
     app.get('/', index.index);
+    app.get('/apply', index.apply);
+    app.get('/schedule', index.schedule);
 
     // API
     app.post('/addAttendee', attendees.addAttendee);
