@@ -3,8 +3,16 @@ var router = express.Router();
 
 
 exports.index = function(req, res) {
-	res.render('app', { title: 'Hackathon' });
-	console.log(req.user);
+	res.render('index', { title: 'Hackathon' });
+};
+
+
+exports.index = function(req, res) {
+	res.render('schedule', { title: 'Schedule' });
+};
+
+exports.index = function(req, res) {
+	res.render('apply', { title: 'Apply' });
 };
 
 //module.exports = router;
