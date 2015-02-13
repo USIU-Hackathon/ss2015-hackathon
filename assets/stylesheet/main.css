@@ -248,7 +248,7 @@ header, .content, footer {
     .content > section header h1 {
       font-size: 2.1em;
       letter-spacing: 0.05em;
-      font-weight: 200;
+      font-weight: 300;
       color: #00A0E3;
       line-height: 1;
       margin-top: -0.2em;
@@ -440,7 +440,7 @@ footer {
     font-size: 5em; }
   .content.page h1 {
     font-size: 4em;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 1.5em; }
   .content.page form button {
     margin-left: auto;
