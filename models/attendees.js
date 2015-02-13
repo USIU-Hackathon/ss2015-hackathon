@@ -1,12 +1,12 @@
 var config = require('../config/database');
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize(config.postgres);
+var sequelize = new Sequelize();
 
 
 var Attendees = sequelize.define('Attendees', {
   name: Sequelize.STRING,
   email: Sequelize.STRING,
-  date_registered: Sequelize.STRING,
+  date_registered: Sequelize.DATE,
   idea: Sequelize.TEXT,
   phone_number: Sequelize.INTEGER,
   github_username: Sequelize.STRING
