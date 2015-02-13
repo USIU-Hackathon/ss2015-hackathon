@@ -1,4 +1,3 @@
-var slug = require('slug');
 var Attendees = require('../models/attendees');
 
 
