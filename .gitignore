@@ -31,4 +31,4 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-.sasscache
+.sass-cache
