@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Paul Bombo> -- <Authority> -- <@pbombo>
+    <Ian Juma>  -- <Main guy> -- <@IanJuma>
+    <Natasha Nyaberi> -- <ninja> -- <she's not on twitter>
+
+# THANKS to
+
+    <pwamuyu>
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Sass
+    jQuery, HT5BP
