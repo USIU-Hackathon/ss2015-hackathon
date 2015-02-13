@@ -1,0 +1,48 @@
+
+/** Footer Styles **/
+
+footer {
+	background: #FFF;
+	position: relative;
+	z-index: 1;
+
+	font-family: $primary_stack;
+	font-size: 0.85em;
+	color: darken(#CCC, 20%);
+	letter-spacing: 1px;
+	
+	margin: 2em 0;
+	padding-top: 2em; padding-bottom: 1em;
+	border-top: 1px solid #E0E0E0;
+
+	h3 {
+		font-size: 0.85em;
+		font-weight: normal;
+		text-transform: uppercase;
+		margin-bottom: 2.5em;
+	}
+
+	p {
+		letter-spacing: 0;
+	}
+
+	img {
+		width: inherit;
+	}
+
+	a {
+		display: table;
+		color: $blue;
+		text-decoration: none;
+		margin-bottom: 0.25em;
+		border-bottom: 1px solid transparent;
+
+		&:hover {
+			// color: $usiu_yellow;
+			border-bottom-color: $usiu_yellow;
+		}
+	}
+}
+
+
+/** End of Footer Styles **/

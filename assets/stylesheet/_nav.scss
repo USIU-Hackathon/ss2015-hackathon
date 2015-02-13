@@ -1,0 +1,47 @@
+/** Header and Navigation Styles **/
+
+header {
+	
+	height: 5em;
+	line-height: 5em;
+	
+	a.logo {
+		float: left;
+		line-height: 5em;
+
+		img {
+			height: 40px;
+		}
+
+	}
+	
+	
+	nav {
+
+		clear: both;
+		line-height: 3.75em;
+
+		margin-bottom: 2em;
+
+		a {
+			font-size: 1.125em;
+			font-variant: small-caps;
+			text-transform: lowercase;
+			text-decoration: none;
+			color: #000;//darken(#CCC, 20%);
+			letter-spacing: 2px;
+			line-height: 0;
+
+			margin-right: 1em;
+
+			&:hover, &.active {
+//				color: darken(#CCC, 20%);
+//				color: $usiu_yellow;
+				border-bottom: 2px solid $usiu_yellow;
+			}
+		}
+	}
+}
+
+
+/** End of Header and Navigation Styles **/

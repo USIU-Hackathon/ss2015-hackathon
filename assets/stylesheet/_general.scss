@@ -1,0 +1,332 @@
+/** General Styles **/
+
+.half {
+	width: 50%;
+	box-sizing: border-box;
+	padding: 1em;
+	float: left;
+}
+
+.content {
+
+	label {
+		font-size: 0.8em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 0.25em;
+
+		span {
+			color: red;
+		}
+	}
+
+	input, textarea {
+		display: block;
+
+		background: #FAFAFA;
+		font-size: 0.9em;
+		outline: none;
+		border: 1px solid #DDD;
+		padding: 0.75em 0.5em;
+		margin-bottom: 1.5em;
+
+		width: 90%;
+
+		@include transition(background 0.2s linear);
+
+		&:focus {
+			background: #FFF;
+		}
+	}
+
+	textarea {
+		height: 200px;
+	}
+
+	button {
+		display: inline-block;
+		background: $usiu_yellow;
+		font-size: 0.9em;
+		color: #FFF;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 1em 2em;
+		border: 1px solid $usiu_yellow;
+		outline: none;
+
+		@include transition(background 0.2s linear);
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+
+	> section {
+
+		width: 100%;
+		margin-top: 2em;
+
+		* {
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		> div {
+			position: relative;			
+			max-width: 1400px;
+			margin-left: auto;
+			margin-right: auto;
+			margin: 0;
+
+			&:before, &:after {
+				content: " ";
+				display: table;				
+			}
+
+			&:after {
+				clear: both;
+			}
+		} 
+
+		header {
+
+
+			display: block;
+
+			line-height: 1.4;
+			height: auto;
+
+			padding-top: 6.41026%;
+			padding-bottom: 4em;
+			padding-left: 4%;
+
+			border-top: solid 1px #E6E6E6;
+			border-bottom: solid 1px #E6E6E6;
+
+
+			h1 {
+				font-size: 2.1em;
+				letter-spacing: 0.05em;
+				font-weight: 200;
+				color: $blue;
+				line-height: 1;
+				margin-top: -0.2em;
+				margin-bottom: 0.6em;
+			}
+
+
+			h2 {
+				font-size: 0.9em;
+				font-weight: 400;
+				color: #666666;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+
+				margin-bottom: 0.5em;
+
+				.slash, .hour {
+					color: #BBB;
+					font-weight: 400;
+				}	
+			}
+
+			p {
+				font-size: 0.9em;
+				color: #AAA;
+				padding-right: 5.12821%;
+			}
+
+			dl {
+				font-size: 0.85em;
+				font-weight: 400;
+				color: #8c8c8c;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				word-spacing: 0.1em;
+				line-height: 1.5;
+
+				margin-top: 5.12821%;
+				margin-bottom: -2.5641%;
+
+				&:before, &:after {
+					content: " ";
+					display: table;
+				}
+
+				&:after {
+					clear: both;
+				}
+
+				dd {
+					display: block;
+					float: left;
+					margin-left: 0;
+					margin-right: 1.2%;
+					width: 48%;
+					border-top-color: #CCC;
+
+					.hour {
+						padding-left: 0.2em;
+					}
+
+				}
+
+				dt {
+					display: none;
+					float: left;
+					width: 23.91304%;
+					clear: both;
+
+					font-weight: 500;
+					color: #737373;
+					
+					margin-right: 8.69565%;
+					border-top-color: #BBB;
+				}
+			}
+
+			dt, dd {
+				padding-top: 1.4em;
+				padding-bottom: 2.4em;
+				border-top: 1px solid transparent;
+			}
+
+			dt {
+				border-top-color: #BBB;
+				font-weight: 500;
+				color: #737373;
+			}
+
+		}
+
+		.main {
+			margin-right: 0;
+			padding: 5% 4%;
+
+			> p span {
+				color: red;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			ul, li {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			h2, li > p:first-child {
+				width: 100%;
+				text-transform: uppercase;
+				font-size: 0.9em;
+				letter-spacing: 0.15em;
+				color: #333;
+				border-top: solid 1px $blue;
+				padding-top: 1em;
+				padding-bottom: 0;
+
+				.hour {
+					color: #BBB;
+				}				
+			}
+
+			h2 {
+				font-size: 1.1em;
+				font-weight: normal;
+				line-height: 1.3;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+				word-spacing: 0.1em;
+				color: $blue;
+
+				border-top: solid 1px #E6E6E6;
+				padding-top: 1.5em;
+				padding-right: 5.12821%;
+				padding-bottom: 0;
+
+			}
+
+			h3 {
+				display: block;
+
+				font-weight: normal;
+				font-size: 0.9em;
+				color: #CCC;
+				text-transform: uppercase;
+				word-spacing: 0.1em;
+				letter-spacing: 0.1em;
+				line-height: 1.4;
+
+				margin-top: 0.5em;
+				margin-bottom: 1.66667em;
+				padding-right: 5.12821%;
+
+				a {
+					color: #AAA;
+				}
+			}
+
+			ul {
+
+				li {
+					display: block;
+
+					padding-bottom: 1em;
+
+					div {
+						display: block;
+					}
+				}
+
+				div {
+
+					p {
+						font-size: 0.9em;
+						max-width: 38em; 
+					}
+				}
+
+
+			}
+
+			aside {
+
+				ul {
+					
+					line-height: 1.8em;
+
+					&:before, &:after {
+						clear: both;
+					}
+
+					li {
+
+						float: left;
+
+						font-size: 0.8em;
+						text-transform: uppercase;
+						line-height: 2.25em;
+						margin-top: 0;
+
+						+ :before {
+							content: "/";
+							color: #CCC;
+							padding-left: 0.6em;
+							padding-right: 0.6em;
+						}
+
+						a {
+							color: #AAA;
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+}
+
+/** End of General Styles **/
