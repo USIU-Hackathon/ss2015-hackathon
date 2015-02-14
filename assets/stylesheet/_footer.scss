@@ -31,7 +31,6 @@ footer {
 			display: inline-block;
 			color: #AAA;
 			font-size: 0.85em;
-			
 		}
 	}
 
@@ -49,6 +48,26 @@ footer {
 		&:hover {
 			// color: $usiu_yellow;
 			border-bottom-color: $usiu_yellow;
+		}
+	}
+
+	.credits {
+		clear: both;
+		width: 100%;
+		padding: 4em 1em 1em;
+
+		color: #B0B0B0;
+
+		h3 {
+			margin-bottom: 1em;
+			text-transform: none;
+		}
+
+		a {
+			display: inline-block;
+			color: #AAA;
+			font-size: 0.85em;
+			margin-right: 0.5em;
 		}
 	}
 }
