@@ -1,6 +1,7 @@
 var kueConfig = require('./config/workerQueue');
 
 
+// queue
 var kue = require('kue')
   , redis = require('redis')
   , jobs = kue.createQueue(kueConfig.kue);
