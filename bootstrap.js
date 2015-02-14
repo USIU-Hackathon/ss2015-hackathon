@@ -50,6 +50,7 @@ module.exports = function(app, express) {
     app.get('/register', index.apply);
     app.get('/schedule', index.schedule);
     app.get('/contact', index.contact);
+    app.get('/guide', index.guide);
 
     // API
     app.post('/addAttendee', attendees.addAttendee);

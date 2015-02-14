@@ -37,7 +37,8 @@ $(function() {
     });
 
     //Showdown support in Guide Page
-    
+    // var converter = new Showdown.converter();
+    // converter.makeHTML(markdown);
 
 
 })
