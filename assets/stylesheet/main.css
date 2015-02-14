@@ -424,28 +424,28 @@ header, .content, footer {
       vertical-align: middle; }
 
 /** End of General Styles **/
-.content > section .main .guide {
+.content > section .main .guide, .content > section .main .terms {
   max-width: 640px; }
-  .content > section .main .guide h4, .content > section .main .guide h5 {
+  .content > section .main .guide h4, .content > section .main .guide h5, .content > section .main .terms h4, .content > section .main .terms h5 {
     font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  .content > section .main .guide h4 {
+  .content > section .main .guide h4, .content > section .main .terms h4 {
     font-size: 2.25em;
     font-weight: 400;
     color: #00A0E3;
     text-transform: uppercase;
     margin-top: 2.75em; }
-  .content > section .main .guide h5 {
+  .content > section .main .guide h5, .content > section .main .terms h5 {
     font-size: 1.5em;
     font-weight: 400;
     font-variant: small-caps;
     text-transform: lowercase;
     margin-top: 2.5em;
     margin-bottom: 0.75em; }
-  .content > section .main .guide p {
+  .content > section .main .guide p, .content > section .main .terms p {
     max-width: inherit;
     font-size: 1em;
     font-weight: 400; }
-  .content > section .main .guide ul li {
+  .content > section .main .guide ul li, .content > section .main .terms ul li {
     display: list-item;
     font-size: 0.9em;
     line-height: 1.8;
