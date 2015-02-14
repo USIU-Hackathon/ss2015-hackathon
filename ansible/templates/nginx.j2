@@ -31,12 +31,12 @@ http {
   server {
     listen       443;
 
-    server_name  www.inkoverflow.com;
+    server_name  www.usiuhackathon.me;
     access_log   /var/log/nginx/access.log  main;
     root         html;
 
     location / {
-      proxy_pass   http://ink;
+      proxy_pass   http://hackathon;
     }
 
     ssl_certificate {{ ssl_certificate }};
@@ -45,7 +45,7 @@ http {
 
     location /static/ {
       expires 3d;
-      root /www/data;
+      root /var/www/hackathon/assets;
     }
 
   }
@@ -55,15 +55,14 @@ http {
     server_name  {{ server_name }};
     access_log   {{ access_log }}  main;
 
-    rewrite ^/(.*) https://www.inkoverflow.com/$1 permanent;
+    rewrite ^/(.*) https://www.usiuhackathon.me/$1 permanent;
   }
 
   # reverse proxy
-  upstream ink {
-    server 127.0.0.1:8000 weight=3;
-    server 127.0.0.1:8004 weight=5 max_fails=3 fail_timeout=120; 	# uwsgi
+  upstream hackathon {
+    server 127.0.0.1:8000 weight=5;
+    server 127.0.0.1:8004 weight=5 max_fails=3 fail_timeout=120 down;
     server 127.0.0.1:8001 weight=3 down;
-    server 127.0.0.1:8003 weight=3 backup;
   }
 
 }
