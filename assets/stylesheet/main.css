@@ -424,13 +424,27 @@ header, .content, footer {
 /** End of General Styles **/
 .content > section .main .guide {
   max-width: 640px; }
+  .content > section .main .guide h4, .content > section .main .guide h5 {
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .content > section .main .guide h5 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5em;
+    margin-bottom: 0.75em; }
+  .content > section .main .guide p {
+    max-width: inherit;
+    font-size: 1em; }
   .content > section .main .guide ul li {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    padding-bottom: 0;
+    display: list-item;
+    font-size: 0.9em;
     line-height: 1.8;
     list-style: disc;
-    padding-left: 1em; }
+    margin-top: 0;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    padding-left: 0.25em;
+    padding-bottom: 0; }
 
 /** Footer Styles **/
 footer {
