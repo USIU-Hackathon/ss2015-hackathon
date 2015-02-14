@@ -12,6 +12,16 @@ exports.schedule = function(req, res) {
 };
 
 
+exports.privacy = function(req, res) {
+	res.render('privacy', { title: 'Privacy' });
+};
+
+
+exports.terms = function(req, res) {
+	res.render('terms', { title: 'Terms and Conditions' });
+};
+
+
 exports.apply = function(req, res) {
 	res.render('register', { title: 'Register' });
 };
