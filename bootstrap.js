@@ -53,6 +53,7 @@ module.exports = function(app, express) {
     app.get('/guide', index.guide);
     app.get('/terms', index.terms);
     app.get('/privacy', index.privacy);
+    app.get('/rules', index.rules);
 
 
     // API

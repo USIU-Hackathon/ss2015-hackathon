@@ -16,6 +16,10 @@ exports.privacy = function(req, res) {
 	res.render('privacy', { title: 'Privacy' });
 };
 
+exports.privacy = function(req, res) {
+	res.render('rules', { title: 'Rules' });
+};
+
 
 exports.terms = function(req, res) {
 	res.render('terms', { title: 'Terms and Conditions' });
