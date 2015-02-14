@@ -422,6 +422,16 @@ header, .content, footer {
       vertical-align: middle; }
 
 /** End of General Styles **/
+.content > section .main .guide {
+  max-width: 640px; }
+  .content > section .main .guide ul li {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    padding-bottom: 0;
+    line-height: 1.8;
+    list-style: disc;
+    padding-left: 1em; }
+
 /** Footer Styles **/
 footer {
   background: #FFF;
