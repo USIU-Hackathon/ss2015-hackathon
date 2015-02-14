@@ -442,7 +442,7 @@ header, .content, footer {
   .content > section .main .guide p {
     max-width: inherit;
     font-size: 1em;
-    font-size: 400; }
+    font-weight: 400; }
   .content > section .main .guide ul li {
     display: list-item;
     font-size: 0.9em;
