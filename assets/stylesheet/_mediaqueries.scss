@@ -210,3 +210,12 @@
        only screen and (min-resolution: 144dppx) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+
+@media only screen and (max-width: 480px) {
+
+	header > nav > a {
+		font-size: 0.9em;
+	}
+
+}

@@ -633,5 +633,8 @@ footer {
     box-shadow: 0 -3px 5px #EEE; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dppx) {
   /* Style adjustments for viewports that meet the condition */ }
+@media only screen and (max-width: 480px) {
+  header > nav > a {
+    font-size: 0.9em; } }
 
 /*# sourceMappingURL=main.css.map */
