@@ -1,6 +1,6 @@
 .content > section .main {
 
-	.guide, .terms {
+	.guide, .terms, .privacy {
 
 		max-width: 640px;
 
@@ -30,6 +30,16 @@
 			max-width: inherit;
 			font-size: 1em;
 			font-weight: 400;
+		}
+
+		a {
+			text-decoration: none;
+			color: $blue;
+			border-bottom: 1px solid transparent;
+
+			&:hover {
+				border-bottom-color: $usiu_yellow;
+			}
 		}
 		
 		ul {
