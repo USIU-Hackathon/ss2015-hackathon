@@ -21,3 +21,4 @@ http_port: 9292
 driver_port: 28015
 runuser: rethinkdb
 rungroup: rethinkdb
+machine_name: hackathon
