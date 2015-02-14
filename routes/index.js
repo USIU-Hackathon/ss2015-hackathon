@@ -16,7 +16,7 @@ exports.privacy = function(req, res) {
 	res.render('privacy', { title: 'Privacy' });
 };
 
-exports.privacy = function(req, res) {
+exports.rules = function(req, res) {
 	res.render('rules', { title: 'Rules' });
 };
 
