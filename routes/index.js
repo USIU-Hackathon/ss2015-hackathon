@@ -12,7 +12,7 @@ exports.schedule = function(req, res) {
 };
 
 exports.apply = function(req, res) {
-	res.render('apply', { title: 'Apply' });
+	res.render('register', { title: 'Register' });
 };
 
 //module.exports = router;

@@ -25,7 +25,7 @@ module.exports = function(app, express) {
 
 
     // setup the logger and only log errors
-    var accessLogStream = fs.createWriteStream('InkOverFlow.log', 
+    var accessLogStream = fs.createWriteStream('hackathon.log', 
     	{ flags: 'a' });
     app.use(logger('combined', { stream: accessLogStream,
         skip: function (req, res) { return res.statusCode < 400 } }));
@@ -47,7 +47,7 @@ module.exports = function(app, express) {
 
     // static pages routes
     app.get('/', index.index);
-    app.get('/apply', index.apply);
+    app.get('/register', index.apply);
     app.get('/schedule', index.schedule);
 
     // API
