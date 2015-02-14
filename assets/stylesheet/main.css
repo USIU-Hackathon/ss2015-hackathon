@@ -204,7 +204,7 @@ header, .content, footer {
     background: #FFF; }
 .content textarea {
   height: 200px; }
-.content button {
+.content button, .content .button {
   display: inline-block;
   background: #FFCB08;
   font-size: 0.9em;
@@ -217,7 +217,7 @@ header, .content, footer {
   -webkit-transition: background 0.2s linear;
   -moz-transition: background 0.2s linear;
   transition: background 0.2s linear; }
-  .content button:hover {
+  .content button:hover, .content .button:hover {
     opacity: 0.9; }
 .content > section {
   width: 100%;
@@ -426,10 +426,17 @@ header, .content, footer {
   max-width: 640px; }
   .content > section .main .guide h4, .content > section .main .guide h5 {
     font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .content > section .main .guide h4 {
+    font-size: 2.25em;
+    font-weight: 400;
+    color: #00A0E3;
+    text-transform: uppercase;
+    margin-top: 2.75em; }
   .content > section .main .guide h5 {
     font-size: 1.5em;
     font-weight: 400;
-    text-transform: uppercase;
+    font-variant: small-caps;
+    text-transform: lowercase;
     margin-top: 2.5em;
     margin-bottom: 0.75em; }
   .content > section .main .guide p {
@@ -442,7 +449,7 @@ header, .content, footer {
     list-style: disc;
     margin-top: 0;
     margin-left: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.25em;
     padding-left: 0.25em;
     padding-bottom: 0; }
 
