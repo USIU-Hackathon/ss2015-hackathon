@@ -36,5 +36,8 @@ $(function() {
         })
     });
 
+    //Showdown support in Guide Page
+    
+
 
 })
