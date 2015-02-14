@@ -403,6 +403,10 @@ footer {
     margin-bottom: 2.5em; }
   footer p {
     letter-spacing: 0; }
+  footer .privacy-terms-links a {
+    display: inline-block;
+    color: #AAA;
+    font-size: 0.85em; }
   footer img {
     width: inherit; }
   footer a {
