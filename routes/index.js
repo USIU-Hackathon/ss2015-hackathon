@@ -35,6 +35,7 @@ exports.contact = function(req, res) {
 	res.render('contact', { title: 'Contact' });
 }
 
+/*
 exports.guide = function(req, res) {
 
 	var https = require('https');
@@ -61,6 +62,26 @@ exports.guide = function(req, res) {
 	  	console.log("Got error: " + e.message);
 	});
 	
+}
+*/
+
+
+exports.guide = function(req, res) {
+
+	var Showdown = require('showdown');
+	var converter = new Showdown.converter();
+	var fs = require("fs");
+
+	fs.readFile("hackathon.md", function (err, data) {
+		if (err) {
+		    throw err;
+		}
+
+    	//console.log(data.toString());
+    	guide = data.toString();
+		guide = converter.makeHtml(guide);
+		res.render('guide', {title: 'Guide', guide: guide });
+	});
 }
 
 //module.exports = router;
