@@ -2,9 +2,6 @@ var Attendees = require('../models/attendees');
 
 
 exports.addAttendee = function(req, res) {
-	if ( ! req.is('application/json') ) {
-		res.status(400).json({ 'Error': 'Bad Request' });
-	}
 
 	var newPost = new Attendees({
 	  name: req.body.name,
