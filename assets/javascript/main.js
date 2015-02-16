@@ -19,7 +19,7 @@ $(function() {
 
         var data = {
             name: $('#registration-form input[name="name"]').val(),
-            id: $('#registration-form input[name="email"]').val(),
+            email: $('#registration-form input[name="email"]').val(),
             idea: $('#registration-form textarea[name="description"]').val(),
             phone_number: $('#registration-form input[name="telephone"]').val(),
             github_username: $('#registration-form input[name="github_username"]').val(),
@@ -31,14 +31,15 @@ $(function() {
             data: data,
             success: function(res) {
                 console.log(res);
+                window.alert("You have been added to our list of attendees, please check your email to be verified");
+            },
+            error: function(res) {
+                window.alert("Failed, Please make sure that's a USIU email domain and that you've not already signed up for the event");
             }
-
         })
     });
 
     //Showdown support in Guide Page
     // var converter = new Showdown.converter();
     // converter.makeHTML(markdown);
-
-
 })

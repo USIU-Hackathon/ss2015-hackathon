@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: webserver
 
   vars_files:
     - vars/main.yml

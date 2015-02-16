@@ -14,4 +14,4 @@
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, Sass
-    jQuery, HT5BP
+    jQuery, HT5BP, node.js

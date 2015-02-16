@@ -2,9 +2,6 @@ var Attendees = require('../models/attendees');
 
 
 exports.addAttendee = function(req, res) {
-	if ( ! req.is('application/json') ) {
-		res.status(400).json({ 'Error': 'Bad Request' });
-	}
 
 	var newPost = new Attendees({
 	  name: req.body.name,
@@ -37,7 +34,7 @@ exports.addAttendee = function(req, res) {
 
 exports.processCode = function(req, res) {
 
-	Attendees.get( req.params.id ).run(function(error, result) {
+	Attendees.get( req.params.email ).run(function(error, result) {
 		if (result == null) {
 			res.status(404).json({ "Error": "User Not Found" });
 		}

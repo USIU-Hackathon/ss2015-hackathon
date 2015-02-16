@@ -58,6 +58,7 @@ module.exports = function(app, express) {
 
     // API
     app.post('/addAttendee', attendees.addAttendee);
+    app.post('/verify/:email/:code', attendees.processCode);
 
 
     // 404 error handler
