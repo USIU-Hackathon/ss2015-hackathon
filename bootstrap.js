@@ -55,10 +55,6 @@ module.exports = function(app, express) {
     app.get('/privacy', index.privacy);
     app.get('/rules', index.rules);
 
-    app.get('/robots.txt', function (req, res) {
-        res.type('text/plain');
-        res.send("User-agent: *\nAllow: /*");
-    });
 
     // API
     app.post('/addAttendee', attendees.addAttendee);
