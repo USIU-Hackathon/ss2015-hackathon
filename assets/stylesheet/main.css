@@ -403,22 +403,28 @@ header, .content, footer {
 .home > section {
   width: 80%;
   margin: auto;
-  margin-bottom: 4em; }
+  margin-bottom: 6em; }
   .home > section h2 {
     font-size: 2.125em;
     font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     border-bottom: 1px solid #FFCB08;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding-left: 0.25em;
     padding-bottom: 0; }
   .home > section p {
     text: center;
     width: auto; }
   .home > section .button {
-    background: #3299BB;
-    border-color: #3299BB; }
+    background: #000;
+    border-color: #000; }
+  .home > section ul, .home > section li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .home > section li {
+    margin-bottom: 1em; }
 .home .sponsors-wrapper ul, .home .sponsors-wrapper li {
   list-style: none;
   margin: 0;

@@ -26,7 +26,7 @@
 		width: 80%;
 		margin: auto;
 
-		margin-bottom: 4em;
+		margin-bottom: 6em;
 		// border-top: 1px solid #E0E0E0;
 
 
@@ -38,7 +38,7 @@
 			
 			border-bottom: 1px solid $usiu_yellow;
 
-			margin-bottom: 1em;
+			margin-bottom: 2em;
 
 			padding-left: 0.25em;
 			padding-bottom: 0;
@@ -51,9 +51,20 @@
 		}
 
 		.button {
-			background: #3299BB;
-			border-color: #3299BB;
+			background: #000;
+			border-color: #000;
 		}
+
+		ul, li {
+		    list-style: none;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		li {
+			margin-bottom: 1em;
+		}
+
 	}
 
 	//Sponsor Section
