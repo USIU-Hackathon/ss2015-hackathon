@@ -396,6 +396,10 @@ header, .content, footer {
 .home h2 {
   width: 90%;
   font-weight: 300; }
+  .home h2 span {
+    color: #FFF;
+    background: #FFCB08;
+    padding: 0.25em 1em; }
 .home > section {
   width: 80%;
   margin: auto;
@@ -406,11 +410,15 @@ header, .content, footer {
     font-weight: 300;
     text-transform: uppercase;
     border-bottom: 1px solid #FFCB08;
+    margin-bottom: 1em;
     padding-left: 0.25em;
-    margin-bottom: 1em; }
+    padding-bottom: 0; }
   .home > section p {
     text: center;
     width: auto; }
+  .home > section .button {
+    background: #3299BB;
+    border-color: #3299BB; }
 .home .sponsors-wrapper ul, .home .sponsors-wrapper li {
   list-style: none;
   margin: 0;

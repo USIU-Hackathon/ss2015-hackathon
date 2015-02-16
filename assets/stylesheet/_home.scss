@@ -13,6 +13,12 @@
 	h2 {
 		width: 90%;
 		font-weight: 300;
+		
+		span {
+			color: #FFF;
+			background: $usiu_yellow;
+			padding: 0.25em 1em;
+		}
 	}
 
 	> section {
@@ -32,14 +38,21 @@
 			
 			border-bottom: 1px solid $usiu_yellow;
 
-			padding-left: 0.25em;
 			margin-bottom: 1em;
+
+			padding-left: 0.25em;
+			padding-bottom: 0;
 
 		}
 
 		p {
 			text: center;
 			width: auto;
+		}
+
+		.button {
+			background: #3299BB;
+			border-color: #3299BB;
 		}
 	}
 
