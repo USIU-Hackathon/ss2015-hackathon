@@ -34,7 +34,7 @@ $(function() {
                 window.alert("You have been added to our list of attendees, please check your email to be verified");
             },
             error: function(res) {
-                window.alert("Failed, Please make sure that's a USIU email domain and that you've not already signed up for the event");
+                window.alert(res.error);
             }
         })
     });

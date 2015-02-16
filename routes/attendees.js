@@ -15,7 +15,7 @@ exports.addAttendee = function(req, res) {
 	// check if attendee is already registered
 	newPost.save(function(error, result) {
 		if (result == null) {
-			res.status(400).json({ "Error": "Attendee Already Exists" });
+			res.status(400).json({ error: "Attendee Already Exists" });
 		}
 	    if (error) {
 	        res.status(500).json({ error: "something blew up, we're fixing it" });
