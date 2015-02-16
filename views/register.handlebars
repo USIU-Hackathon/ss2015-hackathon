@@ -47,20 +47,33 @@
                     <div class="main">
                         <p><span>*</span> denotes a required field</p>
                         <form id="registration-form" method="POST">
-                            <label for="name">Name <span>*</span></label>
-                            <input type="text" name="name" required autocomplete>
 
-                            <label for="email">Email<span>*</span> (School email please)</label>
-                            <input type="email" name="email" required autocomplete>
+                            <ul>
+                                <li>
+                                    <label for="name">Name <span>*</span></label>
+                                    <input type="text" name="name" required autocomplete>
+                                </li>
 
-                            <label for="telephone">Phone Number<span>*</span> (+254 7XX XXX XXX)</label>
-                            <input type="telephone" name="telephone" required autocomplete>
+                                <li class="inline">
+                                    <label for="email">Email<span>*</span> (School email please)</label>
+                                    <input type="email" name="email" required autocomplete>
+                                </li>
 
-                            <label for="github">GitHub Username </label>
-                            <input type="text" name="github_username">
+                                <li class="inline">
+                                    <label for="telephone">Phone Number<span>*</span> (+254 7XX XXX XXX)</label>
+                                    <input type="telephone" name="telephone" required autocomplete>
+                                </li>
 
-                            <label for="description">Tell us a little about you idea<span>*</span></label>
-                            <textarea name="description"></textarea>
+                                <li>
+                                    <label for="github">GitHub Username </label>
+                                    <input type="text" name="github_username">
+                                </li>
+
+                                <li>
+                                    <label for="description">Tell us a little about you idea<span>*</span></label>
+                                    <textarea name="description"></textarea>
+                                </li>
+                            </ul>
 
                             <button>Submit</button>
                         </form>

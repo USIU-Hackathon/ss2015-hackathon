@@ -365,6 +365,9 @@ header, .content, footer {
     .content > section .main ul div p {
       font-size: 0.9em;
       max-width: 38em; }
+    .content > section .main form ul li {
+      margin: 0;
+      padding-bottom: 0; }
     .content > section .main aside ul {
       line-height: 1.8em; }
       .content > section .main aside ul:before, .content > section .main aside ul:after {
@@ -382,48 +385,55 @@ header, .content, footer {
           padding-right: 0.6em; }
         .content > section .main aside ul li a {
           color: #AAA; }
-.content .sponsors-wrapper {
-  margin: 6em 0 1em;
-  padding: 2em 0 4em;
-  border-top: 1px solid #DDD;
-  border-bottom: 1px solid #DDD; }
-  .content .sponsors-wrapper ul, .content .sponsors-wrapper li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .content .sponsors-wrapper h2 {
-    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 2.25em;
-    text-transform: uppercase;
-    color: #BBB;
-    margin-top: 0; }
-  .content .sponsors-wrapper h3 {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
-    letter-spacing: -1px;
-    margin-top: 3em;
-    margin-bottom: 0; }
-  .content .sponsors-wrapper a {
-    color: #00A0E3;
-    text-decoration: none;
-    border-bottom: 1px solid transparent; }
-    .content .sponsors-wrapper a:hover {
-      border-bottom-color: #FFCB08; }
-  .content .sponsors-wrapper li {
-    float: left;
-    width: 250px;
-    min-height: 140px;
-    line-height: 120px;
-    margin-right: 3em; }
-    .content .sponsors-wrapper li a {
-      display: block;
-      border: none; }
-    .content .sponsors-wrapper li img {
-      width: 100%;
-      vertical-align: middle; }
 
 /** End of General Styles **/
+.home h1 {
+  margin-bottom: 0.1em; }
+.home h2 {
+  width: 90%;
+  font-weight: 300; }
+.home > section {
+  width: 80%;
+  margin-bottom: 4em; }
+  .home > section h2 {
+    font-size: 2.125em;
+    font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-bottom: 1px solid #FFCB08;
+    padding-left: 0.25em;
+    margin-bottom: 1em; }
+  .home > section p {
+    width: auto; }
+.home .sponsors-wrapper ul, .home .sponsors-wrapper li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.home .sponsors-wrapper h3 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-top: 3em;
+  margin-bottom: 0; }
+.home .sponsors-wrapper a {
+  color: #00A0E3;
+  text-decoration: none;
+  border-bottom: 1px solid transparent; }
+  .home .sponsors-wrapper a:hover {
+    border-bottom-color: #FFCB08; }
+.home .sponsors-wrapper li {
+  float: left;
+  width: 250px;
+  min-height: 140px;
+  line-height: 120px;
+  margin-right: 3em; }
+  .home .sponsors-wrapper li a {
+    display: block;
+    border: none; }
+  .home .sponsors-wrapper li img {
+    width: 100%;
+    vertical-align: middle; }
+
 .content > section .main .guide, .content > section .main .terms, .content > section .main .privacy {
   max-width: 640px; }
   .content > section .main .guide h4, .content > section .main .guide h5, .content > section .main .terms h4, .content > section .main .terms h5, .content > section .main .privacy h4, .content > section .main .privacy h5 {
@@ -609,6 +619,10 @@ footer {
         margin-top: 0;
         padding-top: 4em;
         border-top: solid 1px #E6E6E6; }
+        .content > section .main form ul li.inline {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 2em; }
       .content > section .main ul li {
         margin-top: 4em; }
         .content > section .main ul li div {
