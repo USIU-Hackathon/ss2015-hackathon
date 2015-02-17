@@ -318,6 +318,8 @@ header, .content, footer {
       text-decoration: none;
       color: #000;
       border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+      .content > section .main a:hover {
+        border-color: #FFCB08; }
     .content > section .main ul, .content > section .main li {
       list-style: none;
       margin: 0;
