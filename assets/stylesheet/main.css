@@ -315,7 +315,9 @@ header, .content, footer {
     .content > section .main > p span {
       color: red; }
     .content > section .main a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #000;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
     .content > section .main ul, .content > section .main li {
       list-style: none;
       margin: 0;
