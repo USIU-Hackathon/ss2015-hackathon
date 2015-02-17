@@ -4,25 +4,16 @@ var kue = require('kue')
   , jobs = kue.createQueue(kueConfig.kue);
 
 
-function sendwelcomeEmail (user) {
+exports.sendEmail = function(user) {
 
-	// within a closure
-	(function() {
-		var job = jobs.create('email', {
-		    title: 'welcome for ' + user,
-		    to: "ian.j@ymail.com",
-		    template: 'welcome-email'
-		}).priority('high');
+	var job = jobs.create('email', {
+	    to: user.email,
+		subject: user.subject,
+	    title: 'Welcome to the USIU Hackathon - Verification',
+	    body: user.body,
+	    template: 'Verification-email'
+	}).priority('high');
 
-		job.attempts(2).backoff( true );
-		job.save();
-
-		job.on('complete', function() {
-			console.log('Job Complete');
-		});
-
-	})(user);
-
+	job.attempts(2).backoff( true );
+	job.save();
 }
-
-sendwelcomeEmail("Ian");

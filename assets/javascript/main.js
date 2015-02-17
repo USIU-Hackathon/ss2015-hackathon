@@ -34,7 +34,8 @@ $(function() {
                 window.alert("You have been added to our list of attendees, please check your email to be verified");
             },
             error: function(res) {
-                window.alert(res.error);
+                console.log(res);
+                window.alert("Sorry, that Email appears to have already been used");
             }
         })
     });
