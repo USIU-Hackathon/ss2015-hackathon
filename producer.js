@@ -8,9 +8,10 @@ exports.sendEmail = function(user) {
 
 	var job = jobs.create('email', {
 	    to: user.email,
+	    from: "no-reply@usiuhackathon.me",
 		subject: user.subject,
 	    title: 'Welcome to the USIU Hackathon - Verification',
-	    body: user.body,
+	    text: user.body,
 	    template: 'Verification-email'
 	}).priority('high');
 
