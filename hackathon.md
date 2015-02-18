@@ -47,7 +47,6 @@ Relax. In the programming world, hacker means:
 - If and when voting occurs, each team must cast votes for **ANOTHER** team. No self-voting allowed! (for the audience choice award).
 - Upon judging, no complaints can be made whatsoever: there choice is final.There will however be an audience choice.
 - Participation awards - recognition on the IT club website for respective teams.
-- Short demo and presentation, **5 slides max, 5 mins max**. Sharpen your elevator pitching.
 - **No running torrents** within the network or unnecessarily deteriorating the network.
 - For those running hacking demos, be sure to get **permission** before penetrating a system or setup a virtual environment for your tests.
 - Short demo and presentation, **5 slides max, 5 mins max**. Sharpen that elevator pitch.
@@ -58,7 +57,7 @@ Relax. In the programming world, hacker means:
 ##### How to survive a hackathon
 
 
-- Have a _modest_ goal; a simple concept or app to build. Do one thing and do it well, concentrate on building a prototype, not a finished product! Build something simple. A finished product is better than one that can't compile.
+- Have a _modest_ goal; a simple concept or app to build. Do one thing and do it well, concentrate on building a prototype, not a finished product! Build something simple; a finished product is better than one that can't compile.
 - Get enough rest, stay hydrated and just relax. Relax, take it easy, have fun! - [Mika](https://www.youtube.com/watch?v=RVmG_d3HKBA)
 - Set your tools - sublime-text, Netbeans, Jetbrains, VIM, Emacs ... etc your compilers and get your coding mojo.
 - Clean your comp, fine tune it - _just get it working_.
@@ -166,7 +165,7 @@ Feedback? - collection of feedback from the attendees. (just before the judges a
 
 - How many teams had finished products?
 - Demographics of attendees? (age, country, gender)
-- Attendee satisfaction? Feedback forms
+- Attendee satisfaction?
 
 
 #### Post-Event Follow Up
