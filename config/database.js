@@ -8,7 +8,7 @@ module.exports = {
     redis: {
       host: 'localhost',
       port: 6379,
-      db: 2,
+      db: 0,
       pass: ''
     }
 };
