@@ -186,6 +186,7 @@ header, .content, footer {
   top: -3em;
   left: 30%;
   width: 40%;
+  background: #8ecf72;
   padding: 0.5em 1em;
   box-shadow: 1px 1px 5px #AAA; }
   .content .notice.error {
