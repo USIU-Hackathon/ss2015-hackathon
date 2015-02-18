@@ -40,7 +40,7 @@ $(function() {
                 $('.main').prepend(noticeDiv);
                 $('.notice').html(noticeText);
 
-                $('#registration-form textarea, #registration-form input').val();
+                $('#registration-form textarea, #registration-form input').val("");
 
                 setTimeout(function destroyNotice() {
                     $('.notice').remove();
@@ -50,7 +50,7 @@ $(function() {
                 console.log(res);
                 var noticeText = "Ummm&hellip; sorry " + name + ", that Email appears to have already been used";
                 $('.main').prepend(noticeDiv);
-                $('notice').addClass('error').html(noticeText);
+                $('.notice').addClass('error').html(noticeText);
             }
         })
     });
