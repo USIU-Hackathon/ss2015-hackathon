@@ -41,16 +41,24 @@ $(function() {
                 $('.notice').html(noticeText);
 
                 $('#registration-form textarea, #registration-form input').val("");
+                
+                $('body').animate({ scrollTop: 0 }, 500);
+
 
                 setTimeout(function destroyNotice() {
                     $('.notice').remove();
                 }, 2500);
             },
             error: function(res) {
-                console.log(res);
-                var noticeText = "Ummm&hellip; sorry " + name + ", that Email appears to have already been used";
+                var noticeText = "Oi <b>" + name + "</b>, that email appears to have already been used";
                 $('.main').prepend(noticeDiv);
                 $('.notice').addClass('error').html(noticeText);
+
+                $('body').animate({ scrollTop: 0 }, 500);
+                
+                setTimeout(function destroyNotice() {
+                    $('.notice').remove();
+                }, 1500);                
             }
         })
     });
