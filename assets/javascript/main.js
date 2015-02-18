@@ -55,10 +55,10 @@ $(function() {
                 $('.notice').addClass('error').html(noticeText);
 
                 $('body').animate({ scrollTop: 0 }, 500);
-                
+
                 setTimeout(function destroyNotice() {
                     $('.notice').remove();
-                }, 1500);                
+                }, 2500);                
             }
         })
     });
