@@ -9,6 +9,21 @@
 
 .content {
 
+	.notice {
+		position: absolute;
+		top: -3em;
+		left: 30%;
+		width: 40%;
+
+		padding: 0.5em 1em;
+		box-shadow: 1px 1px 5px #AAA;
+
+		&.error {
+			color: #FFF;
+			background: rgb(240, 0, 0);
+		}
+	}
+
 	label {
 		font-size: 0.8em;
 		text-transform: uppercase;

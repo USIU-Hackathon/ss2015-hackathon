@@ -181,6 +181,16 @@ header, .content, footer {
   padding: 1em;
   float: left; }
 
+.content .notice {
+  position: absolute;
+  top: -3em;
+  left: 30%;
+  width: 40%;
+  padding: 0.5em 1em;
+  box-shadow: 1px 1px 5px #AAA; }
+  .content .notice.error {
+    color: #FFF;
+    background: #f00000; }
 .content label {
   font-size: 0.8em;
   text-transform: uppercase;

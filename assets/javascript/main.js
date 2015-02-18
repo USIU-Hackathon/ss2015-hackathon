@@ -25,17 +25,27 @@ $(function() {
             github_username: $('#registration-form input[name="github_username"]').val(),
         };
 
+        var name = data.name;
+            name = name.split(" ")[0];
+
+        var noticeDiv = '<div class="notice"></div>';
+
         $.ajax({
             type: 'POST',
             url: '/addAttendee',
             data: data,
             success: function(res) {
                 console.log(res);
-                window.alert("You have been added to our list of attendees, please check your email to be verified");
+                var noticeText = "Hey <b>"+ name +"</b>! You have been added to our list of attendees, we&rsquo;ve sent you an email to verify your attendance";
+                $('.main').prepend(noticeDiv);
+                $('.notice').html(noticeText);
+
+                $('#registration-form textarea, #registration-form input').val();
             },
             error: function(res) {
-                console.log(res);
-                window.alert("Sorry, that Email appears to have already been used");
+                var noticeText = "Ummm&hellip; sorry " + name + ", that Email appears to have already been used";
+                $('.main').prepend(noticeDiv);
+                $('notice').addClass('error').html(noticeText);
             }
         })
     });
