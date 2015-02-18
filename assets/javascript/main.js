@@ -41,8 +41,13 @@ $(function() {
                 $('.notice').html(noticeText);
 
                 $('#registration-form textarea, #registration-form input').val();
+
+                setTimeout(function destroyNotice() {
+                    $('.notice').remove();
+                }, 2500);
             },
             error: function(res) {
+                console.log(res);
                 var noticeText = "Ummm&hellip; sorry " + name + ", that Email appears to have already been used";
                 $('.main').prepend(noticeDiv);
                 $('notice').addClass('error').html(noticeText);
