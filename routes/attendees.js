@@ -27,20 +27,11 @@ exports.addAttendee = function(req, res) {
 	    }
 	    else {
 	        console.log('Attendee Saved');
-        	res.set({
-			  'Content-Type': 'application/json',
-			});
 
 			var name = req.body.name.split(' ')[0];
 
-        	// email form
-        	var htmlBody = "Hey "+ name +", we have received your application for the USIU-A Hackathon " +
-			"click on the link below to verify your registration. " +
-			"If you did not register please ignore this email. " +
-			"http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
-
-//			var url = "http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
-//			var htmlBody = Handlebars.templates.person(context, {name: req.body.name, verificationUrl: url })
+			var url = "http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
+			var htmlBody = Handlebars.templates.email(context, {name: req.body.name, verificationUrl: url });
 
 			var user = {
 				subject: "USIU-A Hackathon Confirmation",
@@ -49,6 +40,10 @@ exports.addAttendee = function(req, res) {
 			};
         	mail.sendEmail(user);
         	queue.startQueue();
+
+        	res.set({
+			  'Content-Type': 'application/json',
+			});
 
 			res.status(200).json({ 'OK': 'Attendee Saved'});
 	    }
@@ -74,11 +69,7 @@ exports.processCode = function(req, res) {
 						res.status(500).json({ "error": "something blew up, we're fixing it" });
 					} else {
 				        console.log('Attendee updated');
-				  //       res.set({
-						//   'Content-Type': 'application/json'
-						// });
 
-						//res.status(200).json({ "Success": "Your attendance has been confirmed" });
 						res.header('Verifying', 'True');
 						res.redirect('/thankyou');
 					}
