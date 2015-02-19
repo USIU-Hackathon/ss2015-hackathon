@@ -8,10 +8,12 @@
 /* -------------------------------------
 		GLOBAL
 ------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:300,400,700);
+
 * {
 	margin: 0;
 	padding: 0;
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 100%;
 	line-height: 1.6;
 }
@@ -31,6 +33,18 @@ body {
 /* -------------------------------------
 		ELEMENTS
 ------------------------------------- */
+
+hr {
+	border: none;
+	border: 1px solid #CCC;
+	margin: 1em 0;
+}
+
+img {
+	height: 48px;
+}
+
+
 a {
 	color: #444;
 	text-decoration: none;
@@ -43,8 +57,8 @@ a:hover {
 .btn-primary {
 	text-decoration: none;
 	color: #FFF;
-	background-color: #348eda;
-	border: solid #348eda;
+	background-color: #00A0E3;
+	border: solid #00A0E3;
 	border-width: 10px 20px;
 	line-height: 2;
 	font-weight: bold;
@@ -54,20 +68,9 @@ a:hover {
 	display: inline-block;
 	border-radius: 25px;
 }
-
-.btn-secondary {
-	text-decoration: none;
+.btn-primary:hover {
 	color: #FFF;
-	background-color: #aaa;
-	border: solid #aaa;
-	border-width: 10px 20px;
-	line-height: 2;
-	font-weight: bold;
-	margin-right: 10px;
-	text-align: center;
-	cursor: pointer;
-	display: inline-block;
-	border-radius: 25px;
+	opacity: 0.7;
 }
 
 .last {
@@ -119,7 +122,7 @@ table.footer-wrap a {
 		TYPOGRAPHY
 ------------------------------------- */
 h1, h2, h3 {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	line-height: 1.1;
 	margin-bottom: 15px;
 	color: #000;
@@ -137,6 +140,10 @@ h2 {
 }
 h3 {
 	font-size: 22px;
+	margin-top: 10px;
+}
+h4 {
+	color: #888;
 }
 
 p, ul, ol {
@@ -196,23 +203,31 @@ ul li, ol li {
 			<table>
 				<tr>
 					<td>
-						<p>Hey <b>{{name}}</b>!</p>
-						<p>Thank you for registering for the hackathon on 14th March.</p> 
-						<p>We&rsquo;ve received your application and just need you to confirm your registration by clicking the link below.</p> 
+						<img src="https://www.usiuhackathon.me/images/logo_black.png">
+						<hr>
 
-						<a href="{{{verificationUrl}}}" class="">Confirm registration</a>
+						<p>Hey <b>{{name}}</b>!</p>
+						<!-- <h3>Thank you for registering for the hackathon on 14th March.</h3> -->
+
+						<h4>We&rsquo;ve received your application and just need you to confirm your registration by clicking the link below.</h4> 
 
 						<br> 
+						<a href="{{{verificationUrl}}}" class="btn-primary">Confirm Registration</a>
 
-						<p>This is the first event of it&rsquo;s kind in USIU. We&rsquo;re hoping this event will be that start of building a new community so we&rsquo;d love it if you asked some of your friends to register as well.</p>
+						<br> 
+						<br>
 
-						<h2>In the meanwhile&hellip;</h2>
+						<p>This is the first event of it&rsquo;s kind in USIU. We&rsquo;re at the beginings of a great new community hso get your friends to register as well!</p>
 
+						<h3>In the meantime&hellip;</h3>
 						<p>You can keep up to date by following us on the following networks. We&rsquo;ll be posting updates on there as the hackathon draws near</p>
+						<br>
 						<a href="http://facebook.com/usiuhackathon">USIU-Hackathon Facebook Page</a>
 						<br>
-						<a href="http://twitter.com/usiuhackathon">&hellip;and on Twitter</a>
-						<p>Regards.</p>
+						<a href="http://twitter.com/usiuhackathon">Twitter</a>
+						<br>
+						<br>
+						<p>Regards,</p>
 						<p>The USIU Hackathon Team</p>
 					</td>
 				</tr>
