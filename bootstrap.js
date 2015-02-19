@@ -54,6 +54,7 @@ module.exports = function(app, express) {
     app.get('/terms', index.terms);
     app.get('/privacy', index.privacy);
     app.get('/rules', index.rules);
+    app.get('/thankyou', index.thankyou);
 
 
     // API

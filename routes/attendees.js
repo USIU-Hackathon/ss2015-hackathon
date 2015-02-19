@@ -1,6 +1,7 @@
 var Attendees = require('../models/attendees');
 var mail = require('../producer');
 var queue = require('../consumer');
+var Handlebars = require('handlebars');
 
 
 exports.addAttendee = function(req, res) {
@@ -30,11 +31,17 @@ exports.addAttendee = function(req, res) {
 			  'Content-Type': 'application/json',
 			});
 
+			var name = req.body.name.split(' ')[0];
+
         	// email form
-        	var htmlBody = "Hi, we have received your application for the USIU-A Hackathon " +
+        	var htmlBody = "Hey "+ name +", we have received your application for the USIU-A Hackathon " +
 			"click on the link below to verify your registration. " +
 			"If you did not register please ignore this email. " +
 			"http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
+
+//			var url = "http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
+//			var htmlBody = Handlebars.templates.person(context, {name: req.body.name, verificationUrl: url })
+
 			var user = {
 				subject: "USIU-A Hackathon Confirmation",
 				email: req.body.email,
@@ -67,11 +74,13 @@ exports.processCode = function(req, res) {
 						res.status(500).json({ "error": "something blew up, we're fixing it" });
 					} else {
 				        console.log('Attendee updated');
-				        res.set({
-						  'Content-Type': 'application/json'
-						});
+				  //       res.set({
+						//   'Content-Type': 'application/json'
+						// });
 
-						res.status(200).json({ "Success": "Your attendance has been Confirmed" });
+						//res.status(200).json({ "Success": "Your attendance has been confirmed" });
+						res.header('Verifying', 'True');
+						res.redirect('/thankyou');
 					}
 				});
 			}

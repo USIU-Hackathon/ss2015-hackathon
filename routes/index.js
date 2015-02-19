@@ -42,6 +42,14 @@ exports.contact = function(req, res) {
 		description: 'Contact page for the USIU-A Hackathon' });
 }
 
+exports.thankyou = function(req, res) {
+	if(!req.header('Verifying')) {
+		res.redirect('/');
+		return;
+	}
+	res.render('thankyou', {title: 'Registration confirmed!'});
+}
+
 /*
 exports.guide = function(req, res) {
 
