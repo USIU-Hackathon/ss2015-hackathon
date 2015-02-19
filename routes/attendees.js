@@ -1,5 +1,6 @@
 var Attendees = require('../models/attendees');
 var mail = require('../producer');
+var queue = require('../consumer');
 
 
 exports.addAttendee = function(req, res) {
@@ -40,6 +41,7 @@ exports.addAttendee = function(req, res) {
 				body: htmlBody
 			};
         	mail.sendEmail(user);
+        	queue.startQueue();
 
 			res.status(200).json({ 'OK': 'Attendee Saved'});
 	    }
