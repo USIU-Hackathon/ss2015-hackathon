@@ -30,8 +30,10 @@ exports.addAttendee = function(req, res) {
 			});
 
         	// email form
-			var htmlBody = "Click on the link below to verify your registration for the USIU hackathon " +
-			" http://usiuhackathon.me/" + req.body.email + "/" + randCode;
+        	var htmlBody = "Hi, we have received your application for the USIU-A Hackathon " +
+			"click on the link below to verify your registration. " +
+			"If you did not register please ignore this email. " +
+			"http://usiuhackathon.me/" + req.body.email + "/" + randCode;
 			var user = {
 				subject: "USIU-A Hackathon Confirmation",
 				email: req.body.email,
