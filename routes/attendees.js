@@ -34,7 +34,7 @@ exports.addAttendee = function(req, res) {
         	var htmlBody = "Hi, we have received your application for the USIU-A Hackathon " +
 			"click on the link below to verify your registration. " +
 			"If you did not register please ignore this email. " +
-			"http://usiuhackathon.me/" + req.body.email + "/" + randCode;
+			"http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
 			var user = {
 				subject: "USIU-A Hackathon Confirmation",
 				email: req.body.email,
