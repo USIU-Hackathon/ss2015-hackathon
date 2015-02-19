@@ -3,7 +3,6 @@
   roles:
     - buildtools
     - redis
-    - supervisor
     - iptables
 
 - hosts: webserver
