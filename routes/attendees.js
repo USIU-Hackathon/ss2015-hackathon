@@ -60,6 +60,20 @@ exports.processCode = function(req, res) {
 		} else {
 			if (result.code != req.params.code) {
 				res.status(400).json({"Error": "Code MisMatch"});
+			} else {
+
+				Attendees.get( req.params.email ).update({ "confirmed_user": true }).run(function(error, result) {
+					if (error) {
+						res.status(500).json({ "error": "something blew up, we're fixing it" });
+					} else {
+				        console.log('Attendee updated');
+				        res.set({
+						  'Content-Type': 'application/json'
+						});
+
+						res.status(200).json({ "Success": "Your attendance has been Confirmed" });
+					}
+				});
 			}
 		}
 	});
