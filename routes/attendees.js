@@ -2,6 +2,7 @@ var Attendees = require('../models/attendees');
 var mail = require('../producer');
 var queue = require('../consumer');
 var Handlebars = require('handlebars');
+var fs = require("fs");
 
 
 exports.addAttendee = function(req, res) {
@@ -31,21 +32,33 @@ exports.addAttendee = function(req, res) {
 			var name = req.body.name.split(' ')[0];
 
 			var url = "http://usiuhackathon.me/verify/" + req.body.email + "/" + randCode;
-			var htmlBody = Handlebars.templates.email(context, {name: req.body.name, verificationUrl: url });
+			var context = { name: req.body.name, verificationUrl: url };
 
-			var user = {
-				subject: "USIU-A Hackathon Confirmation",
-				email: req.body.email,
-				body: htmlBody
-			};
-        	mail.sendEmail(user);
-        	queue.startQueue();
 
-        	res.set({
-			  'Content-Type': 'application/json',
+			fs.readFile("views/email.handlebars", function (err, data) {
+				if (err) {
+				    throw err;
+				}
+		    	var source = data.toString();
+
+				var template = Handlebars.compile(source);
+				var htmlBody = template(context);
+
+				var user = {
+					subject: "USIU-A Hackathon Confirmation",
+					email: req.body.email,
+					body: htmlBody
+				};
+	        	mail.sendEmail(user);
+	        	queue.startQueue();
+
+	        	res.set({
+				  'Content-Type': 'application/json',
+				});
+
+				res.status(200).json({ 'OK': 'Attendee Saved'});
+
 			});
-
-			res.status(200).json({ 'OK': 'Attendee Saved'});
 	    }
 	});
 };
