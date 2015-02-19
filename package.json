@@ -10,7 +10,6 @@
     "express-handlebars": "*",
     "express-session": "*",
     "forever": "*",
-    "forever-monitor": "*",
     "handlebars": "*",
     "redis": "*",
     "kue": "*",
