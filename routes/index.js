@@ -42,11 +42,8 @@ exports.contact = function(req, res) {
 		description: 'Contact page for the USIU-A Hackathon' });
 }
 
+// :) - hack ya mchezo
 exports.thankyou = function(req, res) {
-	if(!req.header('Verifying')) {
-		res.redirect('/');
-		return;
-	}
 	res.render('thankyou', {title: 'Registration confirmed!'});
 }
 
