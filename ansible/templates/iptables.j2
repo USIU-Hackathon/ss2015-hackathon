@@ -32,8 +32,8 @@
 
 
 # add rethink exception
--A INPUT -m tcp -p tcp -m state --state NEW,ESTABLISHED --dport 28015 -j ACCEPT
--A OUTPUT -m tcp -p tcp -m state --state ESTABLISHED --dport 28015 -j ACCEPT
+-A INPUT -m tcp -p tcp -m state --state NEW,ESTABLISHED --dport 29019 -j ACCEPT
+-A OUTPUT -m tcp -p tcp -m state --state ESTABLISHED --dport 29019 -j ACCEPT
 
 
 # set limits for 100 connecions per IP

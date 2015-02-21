@@ -18,7 +18,7 @@ io_threads: 60
 cores: 2
 port_offset: 0
 http_port: 9292
-driver_port: 28015
+driver_port: 29019
 runuser: rethinkdb
 rungroup: rethinkdb
 machine_name: hackathon
