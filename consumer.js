@@ -22,5 +22,6 @@ exports.startQueue = function() {
 		  console.log(json);
 		});
 
+		done();
 	});
 }
