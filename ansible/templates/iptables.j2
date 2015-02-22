@@ -31,6 +31,11 @@
 -A OUTPUT -m tcp -p tcp -m state --state RELATED,ESTABLISHED --dport 22 -j ACCEPT
 
 
+# add puppet exception
+-A INPUT -m tcp -p tcp -m state --state NEW,RELATED,ESTABLISHED --dport 22 -j ACCEPT
+-A OUTPUT -m tcp -p tcp -m state --state RELATED,ESTABLISHED --dport 22 -j ACCEPT
+
+
 # add rethink exception
 -A INPUT -m tcp -p tcp -m state --state NEW,ESTABLISHED --dport 29019 -j ACCEPT
 -A OUTPUT -m tcp -p tcp -m state --state ESTABLISHED --dport 29019 -j ACCEPT
