@@ -8,7 +8,7 @@ A hackathon is an event, typically lasting several days, in which a large number
 - Building a developer community within campus.
 - Create a hackathon (tech events) culture at USIU.
 - _Mentor_ younger hackers; mentor/ mentee program.
-- Build teams/ team building: Get our team to work with others that they may not regularly work with.
+- Build teams/ team building: Get attendees to work with others they may not regularly work with.
 - Creative output: Give everyone the opportunity to get away from their desks and daily tasks to squeeze out their creative juices.
 - Product development: Create working products or services.
 
