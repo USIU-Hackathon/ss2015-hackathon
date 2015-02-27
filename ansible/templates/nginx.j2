@@ -31,12 +31,17 @@ http {
   server {
     listen       443;
 
-    server_name  www.usiuhackathon.me;
+    server_name  www.usiuhackathon.me usiuhackathon.me;
     access_log   /var/log/nginx/access.log  main;
     root         html;
     #error_page 502 503 /var/www/hackathon/views/503.html;
     #error_page 404 /var/www/hackathon/views/404.html;
     #error_page 500 /var/www/hackathon/views/500.html;
+
+    ## redirect www to nowww
+    if ($host = 'www.usiuhackathon.me' ) {
+        rewrite  ^/(.*)$  https://usiuhackathon.me/$1  permanent;
+    }
 
 
     location / {
@@ -59,7 +64,13 @@ http {
     server_name  {{ server_name }};
     access_log   {{ access_log }}  main;
 
-    rewrite ^/(.*) https://www.usiuhackathon.me/$1 permanent;
+    rewrite ^/(.*) https://usiuhackathon.me/$1 permanent;
+
+    ## redirect www to nowww
+    if ($host = 'www.usiuhackathon.me' ) {
+        rewrite  ^/(.*)$  https://usiuhackathon.me/$1  permanent;
+    }
+
   }
 
   # reverse proxy
