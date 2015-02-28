@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie
+FROM ubuntu:12.04
 MAINTAINER: ian juma <wjuma@students.usiu.ac.ke>
 
 # verify gpg and sha256: http://nodejs.org/dist/v0.10.31/SHASUMS256.txt.asc
@@ -28,7 +28,7 @@ RUN apt-get install -y git-core
 #RUN npm install
 
 
-EXPOSE 22 8003 29019
+EXPOSE 8003 29019
 CMD [ "node" ]
 
 ENV PATH /sbin:/usr/sbin:/usr/bin
