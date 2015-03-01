@@ -17,7 +17,7 @@ RUN \
   echo -e '\n# Node.js\nexport PATH="node_modules/.bin:$PATH"' >> /root/.bashrc
 
 # Define working directory.
-WORKDIR /data
+WORKDIR /var/www/hackathon
 ENV PATH /sbin:/usr/sbin:/usr/bin
 EXPOSE 8003 29019
 VOLUME ["/var/www/hackathon/"]
