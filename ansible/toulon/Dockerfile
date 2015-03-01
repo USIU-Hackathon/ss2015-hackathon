@@ -1,5 +1,5 @@
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu:12.04
 
 RUN apt-get install build-essential
 
