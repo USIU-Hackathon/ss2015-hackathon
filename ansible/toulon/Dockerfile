@@ -1,5 +1,5 @@
 # Pull base image.
-FROM dockerfile/python
+FROM dockerfile/ubuntu
 
 RUN apt-get install build-essential
 
