@@ -20,6 +20,7 @@ RUN \
 WORKDIR /data
 ENV PATH /sbin:/usr/sbin:/usr/bin
 EXPOSE 8003 29019
+VOLUME ["/var/www/hackathon/"]
 
 # Define default command.
 CMD ["bash"]
