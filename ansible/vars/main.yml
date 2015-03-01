@@ -3,7 +3,7 @@
 max_clients: 200
 pid_log: /var/log/nginx/nginx.pid
 error_log: /var/log/nginx/error.log
-processes: 5
+processes: 4
 server_name: www.usiuhackathon.me
 access_log: /var/log/nginx/access.log
 ssl_certificate: /etc/nginx/ssl/ssl-bundle.crt

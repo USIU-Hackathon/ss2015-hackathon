@@ -27,6 +27,25 @@ http {
   tcp_nopush   on;
   server_names_hash_bucket_size 128;
 
+  # concurrent limits
+  limit_conn slimits    50;
+  limit_conn  gulag   50;
+
+   ## Timeouts
+  client_body_timeout   60;
+  client_header_timeout 60;
+  keepalive_timeout     60 60;
+  send_timeout          60;
+
+  ## Compression
+  gzip              on;
+  gzip_buffers      16 8k;
+  gzip_comp_level   4;
+  gzip_min_length   1000;
+  gzip_disable    "MSIE [1-6].(?!.*SV1)";
+  gzip_proxied    expired no-cache no-store private auth;
+  gzip_types    text/plain text/css text/javascript application/json application/x-javascript application/xml;
+
 
   server {
     listen       443;
@@ -43,6 +62,10 @@ http {
         rewrite  ^/(.*)$  https://usiuhackathon.me/$1  permanent;
     }
 
+    # Only allow these request methods
+    #if ($request_method !~ ^(GET|HEAD|POST)$ ) {
+    #    return 404;
+    #}
 
     location / {
       proxy_pass   http://hackathon;
