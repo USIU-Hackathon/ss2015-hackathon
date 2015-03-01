@@ -28,8 +28,7 @@ http {
   server_names_hash_bucket_size 128;
 
   # concurrent limits
-  limit_conn slimits    50;
-  limit_conn  gulag   50;
+  #limit_conn  gulag   32;
 
    ## Timeouts
   client_body_timeout   60;
