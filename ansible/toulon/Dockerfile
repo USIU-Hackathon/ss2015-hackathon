@@ -1,6 +1,8 @@
 # Pull base image.
 FROM dockerfile/python
 
+RUN apt-get install build-essential
+
 # Install Node.js
 RUN \
   cd /tmp && \
