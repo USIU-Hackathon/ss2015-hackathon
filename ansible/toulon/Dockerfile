@@ -1,8 +1,6 @@
 # Pull base image.
 FROM ubuntu:12.04
 
-RUN apt-get install -y wget
-
 # Install Node.js
 RUN \
   cd /tmp && \
