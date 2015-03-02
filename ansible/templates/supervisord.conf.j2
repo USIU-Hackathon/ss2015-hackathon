@@ -1,0 +1,24 @@
+[program:hackathon]
+directory=/tmp/hackathon/hackathon/
+command=forever --watchDirectory start /var/www/hackathon/app.js
+autostart=true
+autorestart=true
+stdout_logfile=/var/log/supervisord/hackathon-stdout.log
+stderr_logfile=/var/log/supervisord/hackathon-stderr.log
+
+
+[supervisord]
+logfile = /tmp/supervisord.log
+logfile_maxbytes = 50MB
+logfile_backups=10
+loglevel = info
+pidfile = /tmp/supervisord.pid
+nodaemon = false
+minfds = 1024
+minprocs = 200
+umask = 022
+identifier = supervisor
+directory = /tmp
+nocleanup = true
+childlogdir = /tmp
+strip_ansi = false
