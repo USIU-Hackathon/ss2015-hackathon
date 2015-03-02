@@ -15,7 +15,7 @@
    - name: Ensure supervisor is at the latest version
      apt: pkg=supervisor state=latest update_cache=true
 
-   - name: Write ban conf
+   - name: Write supervisor conf
      template: src=templates/supervisord.j2 dest=/etc/supervisord.conf
      notify:
       - Restart supervisor
