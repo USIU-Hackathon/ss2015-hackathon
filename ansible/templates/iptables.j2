@@ -5,9 +5,9 @@
 -X
 
 # Setting default filter policy
-#-P INPUT DROP
-#-P OUTPUT DROP
-#-P FORWARD DROP
+#-A INPUT -j DROP
+#-A OUTPUT -j DROP
+#-A FORWARD -j DROP
 
 #drop null packets
 -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
