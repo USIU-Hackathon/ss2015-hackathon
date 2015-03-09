@@ -6,15 +6,37 @@ var kue = require('kue')
 
 // rethink query - produce result and add create task
 
-var config = require('../config/database');
-r.connect(config.rethinkdb, function(err, conn) {
-	conn.use('hackathon');
-	r.db('hackathon').table('Attendee').run(conn, function() {
+/*
+var connection = null;
+var config = require('./config/database');
+r.connect({
+        host: "localhost",
+        port: 29019,
+        authKey: "hackathon2015",
+        db: "hackathon"
+    }, function(err, conn) {
+	if (err) { throw err; }
+	connection = conn;
+});
+*/
 
-	});
-})
+r.connect({
+        host: "localhost",
+        port: 29019,
+        authKey: "hackathon2015",
+        db: "hackathon"
+    }, function(err, conn) {
+	    r.table('Attendee').filter({'confirmed_user': false}).run(conn, function(result) {
+			console.log(result);
+		});
+});
 
 
+/*
+r.db('hackathon').table('Attendee').run(connection, function(result) {
+	console.log('result');
+});
+*/
 
 exports.sendInfoEmail = function(user) {
 

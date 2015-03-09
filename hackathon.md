@@ -80,10 +80,10 @@ Not really, the hackathon is open to techies and enthusiasts alike (programmers,
 The room has all the tools for a successful hackathon, reliable WiFi, microphone, speakers - sockets.
 
 
-##### Who will attend? (must be USIU student)
+##### Who will attend? (students only)
 
-USIU students who are: 
-- Hackers and ideaters a like
+Students who are: 
+- Hackers and ideaters alike
 - Techies
 - Tech Enthusiasts
 
