@@ -5,6 +5,8 @@ var kue = require('kue')
   , jobs = kue.createQueue(kueConfig.kue);
 
 // rethink query - produce result and add create task
+// I got a weird error - get results then email might wait for now :D
+// will go ahead and write one in python - how sad :(
 
 /*
 var connection = null;

@@ -1,4 +1,5 @@
 // We need this to build our post string
+// moving to python
 var querystring = require('querystring');
 var https       = require('https');
 
