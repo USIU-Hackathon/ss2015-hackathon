@@ -238,8 +238,10 @@ ul li, ol li {
                         <p>This is the first event of it&rsquo;s kind in USIU. We&rsquo;re at the beginings of a great new community here so get your friends to register as well!</p>
                         <br>
             
-                        <p>Give a shout-out to our awesome sponsors <a href="https://twitter.com/rethinkdb">RethinkDB</a>
-                        RethinkDB is an open-source distributed database built with love. Enjoy an intuitive query language, 
+                        <p><center><h3>Give a shout-out to our awesome sponsors: </center></h3></p>
+                        <p>
+                        <a href="https://twitter.com/rethinkdb">RethinkDB</a>
+                        is an open-source distributed database built with love. Enjoy an intuitive query language, 
                         automatically parallelized queries, and simple administration. Table joins and batteries included.
                         </p>
 
@@ -267,7 +269,7 @@ ul li, ol li {
                         <br>
                         <a href="http://github.com/USIU-Hackathon/">USIU-Hackathon Github Page</a>
                         <br>
-                        <a href="http://twitter.com/usiuhackathon">Twitter</a>
+                        <a href="http://twitter.com/usiuhackathon">USIU-Hackathon Twitter Page</a>
                         <br>
                         <br>
                         <p>Regards,</p>
