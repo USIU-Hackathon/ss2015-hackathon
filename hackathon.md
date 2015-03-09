@@ -19,6 +19,8 @@ A hackathon is an event, typically lasting several days, in which a large number
 - Snacks and Drinks throughout the event.
 - You get to meet other developers and techies.
 - Be part of building a new community.
+- Swag from our **awesome Sponsors**.
+- And lots of other perks/ gifts :D
 
 
 ##### Do I have to pre-organize a team?
