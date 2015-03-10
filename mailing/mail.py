@@ -317,11 +317,12 @@ Regards,
 USIU Hackathon Team
 """
 
+"""
 for doc in r.table('Attendee').filter({"confirmed_user":"false"}).run(conn):
     sendVerify(doc['id'], verifyEmail)
 
-
 """
+
+
 for doc in r.table('Attendee').run(conn):
     sendEmail(doc['id'], emailHTML)
-"""
