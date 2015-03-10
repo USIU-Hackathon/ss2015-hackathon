@@ -16,6 +16,15 @@ def sendEmail(to, emailHTML):
     status, msg = sg.send(message)
 
 
+def sendVerify(to, body):
+    message = sendgrid.Mail()
+    message.add_to(to)
+    message.set_subject('USIU Hackathon')
+    message.set_text(body)
+    message.set_from('no-reply <no-reply@usiuhackathon.me>')
+    status, msg = sg.send(message)
+
+
 conn = r.connect(host = 'localhost',
                  port = 29019,
                  db = 'hackathon',
@@ -298,5 +307,21 @@ ul li, ol li {
 </html>
 """
 
+
+verifyEmail = """
+Hi, this is a follow up of the previous email, have you confirmed your attendance 
+for the USIU hackathon on the 14 of March 2015?
+Please do so.
+
+Regards,
+USIU Hackathon Team
+"""
+
+for doc in r.table('Attendee').filter({"confirmed_user":"false"}).run(conn):
+    sendVerify(doc['id'], verifyEmail)
+
+
+"""
 for doc in r.table('Attendee').run(conn):
     sendEmail(doc['id'], emailHTML)
+"""
