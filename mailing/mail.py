@@ -260,10 +260,18 @@ ul li, ol li {
                         Post a job and get bids to deliver it on time and budget.
                         </p>
 
+                        <p>
+                            Read the <a href="https://www.usiuhackathon.me/guide">Guide</a> and 
+                            <a href="https://www.usiuhackathon.me/rules">Rules</a>, get your elevator pitch ready.
+                            come hone your skills, connect with other developers that are passionate about building good software, 
+                            learn about tools and new dev patterns, demonstrate your skills... 
+                            and have a chance at wining cool prizes!
+                        </p>
+
                         <br>
 
                         <h3>In the meantime&hellip;</h3>
-                        <p>You can keep up to date by following us on the following networks. We&rsquo;ll be posting updates on there as the hackathon draws near</p>
+                        <p>You can keep up to date by following us on the following networks.</p>
                         <br>
                         <a href="http://facebook.com/usiuhackathon">USIU-Hackathon Facebook Page</a>
                         <br>
