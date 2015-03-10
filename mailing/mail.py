@@ -16,6 +16,15 @@ def sendEmail(to, emailHTML):
     status, msg = sg.send(message)
 
 
+def sendPrimer(to, body):
+    message = sendgrid.Mail()
+    message.add_to(to)
+    message.set_subject('USIU Hackathon Primer Event')
+    message.set_text(body)
+    message.set_from('no-reply <no-reply@usiuhackathon.me>')
+    status, msg = sg.send(message)
+
+
 def sendVerify(to, body):
     message = sendgrid.Mail()
     message.add_to(to)
@@ -317,6 +326,15 @@ Regards,
 USIU Hackathon Team
 """
 
+primerEmail = """
+Hi, around the USIU campus? Join us on the 11th of March at 2:00 PM in the School of Science Building SC7
+for a Primer to the hackathon. We'll go through a guide on all things hackathons, our goals for the event, 
+an introduction to our awesome sponsors and a few of their product demos.
+
+Regards,
+USIU Hackathon Team
+"""
+
 """
 for doc in r.table('Attendee').filter({"confirmed_user":"false"}).run(conn):
     sendVerify(doc['id'], verifyEmail)
@@ -325,4 +343,10 @@ for doc in r.table('Attendee').filter({"confirmed_user":"false"}).run(conn):
 
 
 for doc in r.table('Attendee').run(conn):
+    sendPrimer(doc['id'], primerEmail)
+
+
+"""
+for doc in r.table('Attendee').run(conn):
     sendEmail(doc['id'], emailHTML)
+"""
