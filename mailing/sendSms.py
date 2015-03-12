@@ -38,5 +38,4 @@ def sendText(to):
 
 
 for doc in r.table('Attendee').run(conn):
-    sendEmail(doc['id'], emailHTML)
     sendText(doc['phone_number'])
