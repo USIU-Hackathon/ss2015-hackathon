@@ -249,14 +249,23 @@ ul li, ol li {
                         <img src="https://www.usiuhackathon.me/images/logo_black.png">
                         <hr>
 
-                        <h3>Thank you for registering for the hackathon on the 14th of March 2015.</h3>
+                        <h2>We are one day from the hackathon, are you ready?</h2>
 
                         <br>
 
-                        <p>This is the first event of it&rsquo;s kind in USIU. We&rsquo;re at the beginings of a great new community here so get your friends to register as well!</p>
+                        <p>Looking forward to seeing what you&rsquo;re going to build! Remember, you will be posting your code to our GitHub organisation account - We have private repos for y&rsquo;all</p>
+                        <br>
+
+                         <p>Remember to tweet and follow us <a href="http://twitter.com/USIUHackathon">@usiuhackathon</a>. Please make sure to come early; we start at 8:00 AM. Once the competition has begun, please push regularly to Github. We&rsquo;ll assign repos to all teams, courtesy of Github.</p>
+                        <br>
+
+
+                        <p>
+                        After the submission deadline, you can see what other people have built and leave comments on their projects. We will be sending out another email regarding community judging, which will take place during the hackathon. After the community judging phase, we will have our expert judging phase, and winners will be announced.
+                        </p>
                         <br>
             
-                        <p><center><h3>Give a shout-out to our awesome sponsors: </center></h3></p>
+                        <p><center><h3>Give a BIG shout-out to our awesome sponsors: </center></h3></p>
                         <p>
                         <a href="https://twitter.com/rethinkdb">RethinkDB</a>
                         is an open-source distributed database built with love. Enjoy an intuitive query language, 
@@ -279,11 +288,15 @@ ul li, ol li {
                         </p>
 
                         <p>
-                            Read the <a href="https://www.usiuhackathon.me/guide">Guide</a> and 
-                            <a href="https://www.usiuhackathon.me/rules">Rules</a>, get your elevator pitch ready.
+                            You should read the <a href="https://www.usiuhackathon.me/guide">Guide</a> and familiarize yourself with the
+                            <a href="https://www.usiuhackathon.me/rules">Rules</a>. Also, get your elevator pitch ready.
                             come hone your skills, connect with other developers that are passionate about building good software, 
                             learn about tools and new dev patterns, demonstrate your skills... 
                             and have a chance at wining cool prizes!
+                        </p>
+
+                          <p>
+                        PS - if you're thinking about how to coordinate with your team during the event, check out Flowdock or Slack, the chat tool that's perfect for software development teams.
                         </p>
 
                         <br>
@@ -341,12 +354,11 @@ for doc in r.table('Attendee').filter({"confirmed_user":"false"}).run(conn):
 
 """
 
-
+"""
 for doc in r.table('Attendee').run(conn):
     sendPrimer(doc['id'], primerEmail)
-
-
 """
+
+
 for doc in r.table('Attendee').run(conn):
     sendEmail(doc['id'], emailHTML)
-"""
