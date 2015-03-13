@@ -19,10 +19,11 @@ apikey = "2a2a5ea28cdd80d566b20e8be38343d8ffebfbb7331b08a781d81d63d9f9d3ab"
 
 def sendText(to):
     gateway = AfricasTalkingGateway(username, apikey)
-    message = """We are a day away from the USIU-hackathon; 
-    			the very first that takes place this Saturday on the 14th of March.
-    			We hope to see you there!
-    			"""
+    """We are a day away from the USIU-hackathon; 
+	the very first that takes place this Saturday on the 14th of March.
+	We hope to see you there!
+	"""
+    message = "The USIU Hackathon is finally here :D. Registration starts at 8:00 AM. Happy Pi Day, Happy hacking!"
 
     recipients = gateway.sendMessage(to, message)
 
