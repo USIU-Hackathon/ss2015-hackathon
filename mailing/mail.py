@@ -3,7 +3,7 @@
 import rethinkdb as r
 import sendgrid
 
-sg = sendgrid.SendGridClient('wjuma', 'obamanation2008')
+sg = sendgrid.SendGridClient(str(os.environ['SENDGRID_USER']), str(os.environ['SENDGRID_PASS']))
 
 
 def sendEmail(to, emailHTML):

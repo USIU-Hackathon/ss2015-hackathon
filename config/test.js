@@ -2,7 +2,7 @@ module.exports = {
     rethinkdb: {
         host: "localhost",
         port: 28015,
-        authKey: "",
+        authKey: process.env.RETHINKDB_AUTH_KEY,
         db: "test"
     },
     elasticsearch: {

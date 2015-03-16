@@ -1,11 +1,12 @@
 #! /usr/bin/env python
 
 import rethinkdb as r
+import os
 
 conn = r.connect(host = 'localhost',
-                 port = 29019,
+                 port = int(os.environ['RETHINKDB_PORT']),
                  db = 'hackathon',
-                 auth_key = 'hackathon2015')
+                 auth_key = str(os.environ['RETHINKDB_AUTH_KEY']))
 
 
 from AfricasTalkingGateway import AfricasTalkingGateway, AfricasTalkingGatewayException
@@ -13,8 +14,8 @@ from AfricasTalkingGateway import AfricasTalkingGateway, AfricasTalkingGatewayEx
 import logging
 logging.basicConfig(filename='SMS.log', level=logging.DEBUG)
 
-username = "IanJuma"
-apikey = "2a2a5ea28cdd80d566b20e8be38343d8ffebfbb7331b08a781d81d63d9f9d3ab"
+username = str(os.environ['SMS_API_USER'])
+apikey = str(os.environ['SMS_API_KEY'])
 
 
 def sendText(to):
