@@ -2,6 +2,8 @@
 
 import rethinkdb as r
 import sendgrid
+import os
+
 
 sg = sendgrid.SendGridClient(str(os.environ['SENDGRID_USER']), str(os.environ['SENDGRID_PASS']))
 
