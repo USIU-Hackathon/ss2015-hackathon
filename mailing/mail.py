@@ -16,6 +16,16 @@ def sendEmail(to, emailHTML):
     status, msg = sg.send(message)
 
 
+def sendPost(to, postFollow):
+    message = sendgrid.Mail()
+    message.add_to(to)
+    message.set_subject('USIU Hackathon')
+    message.set_html(emailHTML)
+    #message.set_text(body)
+    message.set_from('no-reply <no-reply@usiuhackathon.me>')
+    status, msg = sg.send(message)
+
+
 def sendPrimer(to, body):
     message = sendgrid.Mail()
     message.add_to(to)
@@ -339,6 +349,18 @@ Regards,
 USIU Hackathon Team
 """
 
+rethinkEmail = """
+Hi, this is a follow up on the USIU hackathon. Please provide us <a href="http://bit.ly/1GVbnjG">feedback</a>; Help us 
+organise an even better hackathon. Looking forward to having you in future hackathons :D.
+
+Win some awesome prizes by rethinkDB, check out there blogging competition with 
+<a href="http://rethinkdb.com/blog/airpair-writing-contest/">Airpair</a>. 1000$ up for grabs; 
+and other awesome prizes. Submit your Post.
+
+Regards,
+USIU hackathon Team
+"""
+
 primerEmail = """
 Hi, around the USIU campus? Join us on the 11th of March at 2:00 PM in the School of Science Building SC7
 for a Primer to the hackathon. We'll go through a guide on all things hackathons, our goals for the event, 
@@ -361,4 +383,10 @@ for doc in r.table('Attendee').run(conn):
 
 
 for doc in r.table('Attendee').run(conn):
+    sendPost(doc['id'], rethinkEmail)
+
+
+"""
+for doc in r.table('Attendee').run(conn):
     sendEmail(doc['id'], emailHTML)
+"""
