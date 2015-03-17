@@ -22,7 +22,7 @@ def sendPost(to, postFollow):
     message = sendgrid.Mail()
     message.add_to(to)
     message.set_subject('USIU Hackathon')
-    message.set_html(emailHTML)
+    message.set_html(postFollow)
     #message.set_text(body)
     message.set_from('no-reply <no-reply@usiuhackathon.me>')
     status, msg = sg.send(message)
