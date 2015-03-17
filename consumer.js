@@ -1,5 +1,5 @@
 var kueConfig = require('./config/workerQueue');
-var sendgrid  = require('sendgrid')('wjuma', 'obamanation2008');
+var sendgrid  = require('sendgrid')(process.env.SENDGRID_USER, process.env.SENDGRID_PASS);
 
 var kue = require('kue')
 	  , redis = require('redis')
