@@ -47,7 +47,7 @@ Relax. In the programming world, hacker means:
 - **Bring your own device** (BYOD) laptop, tablet, testing device.
 - We encourage teams to be composed of _two to five people_ - you need a good reason to work alone (**optional**).
 - If and when voting occurs, each team must cast votes for **ANOTHER** team. No self-voting allowed! (for the audience choice award).
-- Upon judging, no complaints can be made whatsoever: there choice is final.There will however be an audience choice.
+- Upon judging, no complaints can be made whatsoever: their choice is final.There will however be an audience choice award.
 - Participation awards - recognition on the IT club website for respective teams.
 - **No running torrents** within the network or unnecessarily deteriorating the network.
 - For those running hacking demos, be sure to get **permission** before penetrating a system or setup a virtual environment for your tests.
