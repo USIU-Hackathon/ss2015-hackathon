@@ -23,6 +23,7 @@ coverage
 # ignore env var file
 .env
 .shell
+cluster
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
