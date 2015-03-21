@@ -1,6 +1,6 @@
 module.exports = {
     rethinkdb: {
-        host: "localhost",
+        host: process.env.RETHINKDB_HOST,
         port: process.env.RETHINKDB_PORT,
         authKey: process.env.RETHINKDB_AUTH_KEY,
         db: "hackathon"
