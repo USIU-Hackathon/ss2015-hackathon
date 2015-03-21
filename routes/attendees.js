@@ -1,6 +1,6 @@
 var Attendees = require('../models/attendees');
-var mail = require('../producer');
-var queue = require('../consumer');
+//var mail = require('../producer');
+//var queue = require('../consumer');
 var Handlebars = require('handlebars');
 var fs = require("fs");
 
@@ -49,8 +49,8 @@ exports.addAttendee = function(req, res) {
 					email: req.body.email,
 					body: htmlBody
 				};
-	        	mail.sendEmail(user);
-	        	queue.startQueue();
+	        	//mail.sendEmail(user);
+	        	//queue.startQueue();
 
 	        	res.set({
 				  'Content-Type': 'application/json',
@@ -91,13 +91,3 @@ exports.processCode = function(req, res) {
 		}
 	});
 };
-
-
-/*
-exports.getAttendeeById = function(req, res) {
-};
-
-
-exports.getPosts = function(req, res) {
-};
-*/

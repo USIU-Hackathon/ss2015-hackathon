@@ -47,36 +47,6 @@ exports.thankyou = function(req, res) {
 	res.render('thankyou', {title: 'Registration confirmed!'});
 }
 
-/*
-exports.guide = function(req, res) {
-
-	var https = require('https');
-	var Showdown = require('showdown');
-	var converter = new Showdown.converter();
-
-	var options = {
-	  host: 'raw.githubusercontent.com',
-	  port: 443,
-	  path: '/USIU-Hackathon/guide/master/hackathon.md',
-	  method: 'GET'
-	};
-
-	https.get(options, function(response) {
-
-		var guide = '';
-		response.on('data', function(chunk) {
-			guide = chunk.toString(); 
-			guide = converter.makeHtml(guide);
-			res.render('guide', {title: 'Guide', guide: guide });
-		});
-
-	}).on('error', function(e) {
-	  	console.log("Got error: " + e.message);
-	});
-	
-}
-*/
-
 
 exports.guide = function(req, res) {
 
