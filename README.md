@@ -10,7 +10,7 @@ USIU registration
 - Setup git hooks
 
 
-#### Add .env sample -- on the root of the project
+###### Add .env -on the root of the project. Here's a sample
 
 ```bash
 RETHINKDB_PORT=<rethinkDB_port>
