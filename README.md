@@ -12,6 +12,7 @@ USIU registration
 
 #### Add .env sample -- on the root of the project
 
+```bash
 RETHINKDB_PORT=<rethinkDB_port>
 RETHINKDB_HOST=localhost
 RETHINKDB_AUTH_KEY=<rethinkDB_auth_key>
@@ -19,3 +20,4 @@ SMS_API_USER=<sendgrid_username>
 SMS_API_KEY=<africasTalking_key>
 SENDGRID_USER=<your_username>
 SENDGRID_PASS=<your_pass>
+```
