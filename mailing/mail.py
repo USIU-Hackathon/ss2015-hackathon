@@ -23,7 +23,6 @@ def sendPost(to, postFollow):
     message.add_to(to)
     message.set_subject('USIU Hackathon')
     message.set_html(postFollow)
-    #message.set_text(body)
     message.set_from('no-reply <no-reply@usiuhackathon.me>')
     status, msg = sg.send(message)
 
@@ -354,12 +353,14 @@ USIU Hackathon Team
 rethinkEmail = """
 Hi, this is a follow up on the USIU hackathon. Please provide us <a href="http://bit.ly/1GVbnjG">feedback</a>; Help us 
 organise an even better hackathon. Looking forward to having you in future hackathons :D.
-
+<br>
+<br>
 Win some awesome prizes by rethinkDB, check out there blogging competition with 
 <a href="http://rethinkdb.com/blog/airpair-writing-contest/">Airpair</a>. 1000$ up for grabs; 
 and other awesome prizes. Submit your Post.
-
-Regards,
+<br>
+<br>
+Regards,<br>
 USIU hackathon Team
 """
 
