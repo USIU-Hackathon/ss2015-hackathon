@@ -1,14 +1,7 @@
-#### USIU HCKS - USIU hackathon
+#### USIU HCKS - USIU hackathon 2015 14th May
 
-USIU hackathon registration and information page. Fork, contribute and create
+USIU hackathon registration and information page. Feel free to Fork, Contribute or Create
 an issue.
-
-###### Todo
-
-- Metrics - Follow up: lines of code, teams, projects launched
-- Feedback Page
-- Google Analytics
-- Setup git hooks
 
 
 ###### How to run USIU HCKS:
