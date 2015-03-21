@@ -22,10 +22,6 @@ npm install .
 RETHINKDB_PORT=<rethinkDB_port>
 RETHINKDB_HOST=localhost
 RETHINKDB_AUTH_KEY=<rethinkDB_auth_key>
-SMS_API_USER=<africasTalking_username>
-SMS_API_KEY=<africasTalking_api_key>
-SENDGRID_USER=<your_username>
-SENDGRID_PASS=<your_pass>
 ```
 
 This sets up environment variables that are accessed within node:
