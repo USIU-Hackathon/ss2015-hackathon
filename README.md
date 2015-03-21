@@ -16,7 +16,7 @@ npm install .
 ```
 
 
-###### Add .env -on the root of the project. Here's a sample.
+###### Create a .env file - at the root of the project. Here's a sample.
 
 ```bash
 RETHINKDB_PORT=<rethinkDB_port>
@@ -27,3 +27,14 @@ SMS_API_KEY=<africasTalking_api_key>
 SENDGRID_USER=<your_username>
 SENDGRID_PASS=<your_pass>
 ```
+
+This sets up environment variables that are accessed within node:
+```javascript
+process.env.VAR
+```
+
+Finally launch the app using:
+```javascript
+node app.js
+```
+
