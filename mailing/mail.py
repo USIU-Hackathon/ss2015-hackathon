@@ -157,14 +157,14 @@ table.body-wrap .container {
         FOOTER
 ------------------------------------- */
 table.footer-wrap {
-    width: 100%;    
+    width: 100%;
     clear: both!important;
 }
 
 .footer-wrap .container p {
     font-size: 12px;
     color: #666;
-    
+
 }
 
 table.footer-wrap a {
@@ -275,34 +275,34 @@ ul li, ol li {
                         After the submission deadline, you can see what other people have built and leave comments on their projects. We will be sending out another email regarding community judging, which will take place during the hackathon. After the community judging phase, we will have our expert judging phase, and winners will be announced.
                         </p>
                         <br>
-            
+
                         <p><center><h3>Give a BIG shout-out to our awesome sponsors: </center></h3></p>
                         <p>
                         <a href="https://twitter.com/rethinkdb">RethinkDB</a>
-                        is an open-source distributed database built with love. Enjoy an intuitive query language, 
+                        is an open-source distributed database built with love. Enjoy an intuitive query language,
                         automatically parallelized queries, and simple administration. Table joins and batteries included.
                         </p>
 
                         <br>
 
                         <p>
-                        <a href="https://www.africastalking.com/">Africa's Talking</a> provides a way for people and companies 
-                        across the African continent to connect via SMS messages. They offer bulk SMS, short codes and premium SMS, 
+                        <a href="https://www.africastalking.com/">Africa's Talking</a> provides a way for people and companies
+                        across the African continent to connect via SMS messages. They offer bulk SMS, short codes and premium SMS,
                         USSD, MMS and customized mobile messaging solutions for individuals, businesses and developers.
                         </p>
 
                         <br>
 
                         <p>
-                        <a href="https://www.kuhustle.com/">Kuhustle</a> is an online tech community work place, 
+                        <a href="https://www.kuhustle.com/">Kuhustle</a> is an online tech community work place,
                         Post a job and get bids to deliver it on time and budget.
                         </p>
 
                         <p>
                             You should read the <a href="https://www.usiuhackathon.me/guide">Guide</a> and familiarize yourself with the
                             <a href="https://www.usiuhackathon.me/rules">Rules</a>. Also, get your elevator pitch ready.
-                            come hone your skills, connect with other developers that are passionate about building good software, 
-                            learn about tools and new dev patterns, demonstrate your skills... 
+                            come hone your skills, connect with other developers that are passionate about building good software,
+                            learn about tools and new dev patterns, demonstrate your skills...
                             and have a chance at wining cool prizes!
                         </p>
 
@@ -329,7 +329,7 @@ ul li, ol li {
             </table>
             </div>
             <!-- /content -->
-            
+
         </td>
         <td></td>
     </tr>
@@ -342,7 +342,7 @@ ul li, ol li {
 
 
 verifyEmail = """
-Hi, this is a follow up of the previous email, have you confirmed your attendance 
+Hi, this is a follow up of the previous email, have you confirmed your attendance
 for the USIU hackathon on the 14 of March 2015?
 Please do so.
 
@@ -351,12 +351,14 @@ USIU Hackathon Team
 """
 
 rethinkEmail = """
-Hi, this is a follow up on the USIU hackathon. Please provide us <a href="http://bit.ly/1GVbnjG">feedback</a>; Help us 
+Hi,
+<br>
+This is a follow up on the USIU hackathon. Please provide us <a href="http://bit.ly/1GVbnjG">feedback</a>; Help us
 organise an even better hackathon. Looking forward to having you in future hackathons :D.
 <br>
 <br>
-Win some awesome prizes by rethinkDB, check out there blogging competition with 
-<a href="http://rethinkdb.com/blog/airpair-writing-contest/">Airpair</a>. 1000$ up for grabs; 
+Win some awesome prizes by rethinkDB, check out there blogging competition with
+<a href="http://rethinkdb.com/blog/airpair-writing-contest/">Airpair</a>. 1000$ up for grabs;
 and other awesome prizes. Submit your Post.
 <br>
 <br>
@@ -366,7 +368,7 @@ USIU hackathon Team
 
 primerEmail = """
 Hi, around the USIU campus? Join us on the 11th of March at 2:00 PM in the School of Science Building SC7
-for a Primer to the hackathon. We'll go through a guide on all things hackathons, our goals for the event, 
+for a Primer to the hackathon. We'll go through a guide on all things hackathons, our goals for the event,
 an introduction to our awesome sponsors and a few of their product demos.
 
 Regards,
